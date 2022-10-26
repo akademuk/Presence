@@ -832,6 +832,11 @@ h1 {
     line-height: 30px;
   }
 }
+@media (max-width: 1300px) {
+  .AppWeb .AppWebLeft img {
+    height: 900px;
+  }
+}
 @media (max-width: 1200px) {
   .AppWeb .AppWebRight {
     padding: 100px 20px 0 20px;
@@ -864,6 +869,7 @@ h1 {
   }
   .AppWeb .AppWebLeft img {
     min-width: 100%;
+    height: 100%;
   }
   .AppWeb .AppWebRight {
     position: absolute;
@@ -942,5 +948,145 @@ h1 {
   }
   .bunner {
     border-radius: 0;
+  }
+}
+.offerAudience {
+  background: linear-gradient(90deg, #181717 41.9%, #1C50FE 102.81%);
+  border-radius: 80px;
+  position: relative;
+  z-index: 1;
+  top: -145px;
+  padding: 120px 0;
+  padding-left: calc(275px - 5vw);
+  padding-right: calc(275px - 5vw);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offerAudience .whiteTittle {
+  font-family: "Inter-ExtraBold";
+  font-size: 75px;
+  line-height: 91px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+  max-width: 80%;
+}
+
+.offerAudienceContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-bottom: 90px;
+}
+.offerAudienceContainer .offerAudienceSection {
+  max-width: 45%;
+  border: 2px solid #FFFFFF;
+  filter: drop-shadow(0px 8px 23px rgba(0, 0, 0, 0.1));
+  border-radius: 36px;
+  padding: 33px 50px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  position: relative;
+}
+.offerAudienceContainer .offerAudienceSection h4 {
+  font-family: "Inter-ExtraBold";
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.offerAudienceContainer .offerAudienceSection p {
+  font-family: "Inter-Medium";
+  font-size: 26px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.offerAudienceContainer .offerAudienceSection::after {
+  content: "";
+  background: url(../../img/icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.offerAudienceBtn {
+  background: #1C50FE;
+  border-radius: 24px;
+  margin: 0 auto;
+  padding: 23px 111px;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  font-family: "Inter-ExtraBold";
+  border: none;
+}
+
+@media (max-width: 1350px) {
+  .offerAudienceSection {
+    padding: 16px;
+  }
+  .offerAudienceSection h4 {
+    font-size: 30px !important;
+  }
+  .offerAudience {
+    padding: 50px !important;
+  }
+  .offerAudience .whiteTittle {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .offerAudienceContainer .offerAudienceSection {
+    max-width: 49%;
+  }
+  .offerAudienceContainer .offerAudienceSection h4 {
+    font-size: 25px !important;
+  }
+  .offerAudienceContainer .offerAudienceSection p {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 992px) {
+  .offerAudienceContainer {
+    flex-direction: column;
+  }
+  .offerAudienceSection {
+    max-width: 100% !important;
+    min-width: 100%;
+  }
+  .offerAudience {
+    top: -135px;
+  }
+}
+@media (max-width: 576px) {
+  .offerAudience .whiteTittle {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .offerAudienceContainer .offerAudienceSection {
+    padding: 20px 20px 20px 40px !important;
+  }
+  .offerAudienceBtn {
+    padding: 23px;
+  }
+}
+@media (max-width: 440px) {
+  .offerAudience {
+    border-radius: 0;
+    position: static;
   }
 }/*# sourceMappingURL=style.css.map */
