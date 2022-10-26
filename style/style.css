@@ -919,6 +919,7 @@ h1 {
   .AppWeb .AppWebRight h2 {
     font-size: 30px;
     line-height: 35px;
+    color: #fff;
   }
   .AppWeb .AppWebRight .AppWebRightContainer h3 {
     font-size: 20px;
@@ -927,6 +928,11 @@ h1 {
   .AppWeb .AppWebRight .AppWebRightContainer p {
     font-size: 16px;
     line-height: 18px;
+    color: #fff;
+  }
+  .AppWeb .AppWebLeft {
+    min-height: 100%;
+    opacity: 1;
   }
 }
 @media (max-width: 440px) {
@@ -942,9 +948,6 @@ h1 {
   }
   .AppWeb .AppWebRight .AppWebRightContainer h3 {
     margin-bottom: 5px;
-  }
-  .AppWeb .AppWebLeft img {
-    min-height: 550px;
   }
   .bunner {
     border-radius: 0;
@@ -1073,15 +1076,36 @@ h1 {
   }
 }
 @media (max-width: 576px) {
+  .offerAudience {
+    padding: 50px 25px !important;
+  }
   .offerAudience .whiteTittle {
     font-size: 30px;
     line-height: 35px;
   }
+  .offerAudienceContainer {
+    margin-bottom: 20px;
+  }
   .offerAudienceContainer .offerAudienceSection {
     padding: 20px 20px 20px 40px !important;
   }
+  .offerAudienceContainer .offerAudienceSection h4 {
+    font-size: 20px !important;
+    line-height: 25px;
+  }
+  .offerAudienceContainer .offerAudienceSection p {
+    font-size: 16px !important;
+    line-height: 18px;
+  }
   .offerAudienceBtn {
     padding: 23px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .offerAudienceContainer .offerAudienceSection::after {
+    width: 30px;
+    height: 30px;
+    left: -15px;
   }
 }
 @media (max-width: 440px) {
@@ -1328,6 +1352,57 @@ h1 {
     font-size: 30px;
     line-height: 35px;
   }
+  .featuresContainer .featuresSection .featuresBlockTop {
+    padding: 16px;
+  }
+  .featuresSection:nth-of-type(1) .featuresBlockTop p:nth-of-type(1) {
+    font-size: 25px !important;
+    width: 100%;
+    line-height: 30px;
+    justify-content: space-between;
+  }
+  .featuresContainer .featuresSection .featuresBlockTop p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .featuresContainer .featuresSection .featuresBlockBottom .featuresBlockBottomText {
+    padding: 16px;
+  }
+  .featuresContainer .featuresSection .featuresBlockBottom .featuresBlockBottomText p:nth-of-type(1) {
+    font-size: 25px !important;
+    width: 100%;
+    line-height: 30px;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .featuresContainer .featuresSection .featuresBlockBottom .featuresBlockBottomText p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .featuresContainer .featuresSection .featuresBlockBottom img {
+    height: 50%;
+  }
+  .featuresContainer .featuresSection .featuresBlockBottom {
+    height: 100%;
+  }
+  .featuresContainer .featuresSection .featuresBlockTop p:nth-of-type(1) {
+    font-size: 25px !important;
+    width: 100%;
+    line-height: 30px;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .featuresContainer .featuresSection:nth-of-type(3) .featuresBlockTop {
+    height: 100%;
+  }
+  .featuresContainer .featuresSection:nth-of-type(4) .featuresBlockBottom .featuresBlockBottomText {
+    height: 100%;
+  }
+  .featuresContainer .featuresSection:nth-of-type(4) .featuresBlockBottom .featuresBlockBottomText {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
 }
 .community {
   margin-top: 135px;
@@ -1475,7 +1550,9 @@ h1 {
 }
 @media (max-width: 576px) {
   .communityRight {
-    margin-top: 50px;
+    margin: 50px 0 0 0 !important;
+    padding: 0 16px;
+    box-sizing: border-box;
   }
   .communityRight .tittleBlue {
     font-size: 30px;
@@ -1484,6 +1561,39 @@ h1 {
   .communityRight p {
     font-size: 20px;
     width: 90%;
+  }
+  .communityRight button {
+    padding: 23px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .community {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .community .communityLeft {
+    height: 300px;
+    margin-bottom: 0;
+  }
+  .community .communityLeft img {
+    height: 75%;
+    width: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border: none;
+  }
+  .community .communityLeft img:nth-of-type(1) {
+    left: 16px !important;
+    top: 50%;
+    bottom: auto !important;
+    transform: translateY(-50%);
+  }
+  .community .communityLeft img:nth-of-type(2) {
+    right: 16px !important;
+    top: 50%;
+    bottom: auto !important;
+    left: auto !important;
+    transform: translateY(-50%);
   }
 }
 .whoUsing {
@@ -1550,4 +1660,46 @@ h1 {
   font-size: 26px;
   line-height: 31px;
   color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .whoUsing {
+    margin-top: 50px;
+    padding: 50px 16px;
+  }
+  .whoUsing .tittleWhite {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .whoUsing > p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 32px;
+  }
+  .whoUsing .whoUsingContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .whoUsing .whoUsingContainer .whoUsingSection {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .whoUsing .whoUsingContainer .whoUsingSection img {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  .whoUsing .whoUsingContainer .whoUsingSection .whoUsingSectionText h5 {
+    padding-left: 0;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .whoUsing .whoUsingContainer .whoUsingSection .whoUsingSectionText p {
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .whoUsingContainer .whoUsingSection:nth-of-type(3) .whoUsingSectionText {
+    border-right: 2px solid #FFFFFF;
+  }
 }/*# sourceMappingURL=style.css.map */

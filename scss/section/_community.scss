@@ -155,7 +155,9 @@
 }
 @media (max-width: 576px) {
     .communityRight {
-        margin-top: 50px;
+        margin: 50px 0 0 0 !important;
+        padding: 0 16px;
+        box-sizing: border-box;
         .tittleBlue {
             font-size: 30px;
             line-height: 35px;
@@ -163,6 +165,38 @@
         p {
             font-size: 20px;
             width: 90%;
+        }
+        button {
+            padding: 23px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+    .community {
+        margin-top: 0;
+        margin-bottom: 0;
+        .communityLeft  {
+            height: 300px;
+            margin-bottom: 0;
+            img {
+                height: 75%;
+                width: 50%;
+                object-fit: contain;
+                border: none;
+                &:nth-of-type(1) {
+                    left: 16px !important;
+                    top: 50%;
+                    bottom: auto !important;
+                    transform: translateY(-50%);
+                }
+                &:nth-of-type(2) {
+                    right: 16px !important;
+                    top: 50%;
+                    bottom: auto !important;
+                    left: auto !important;
+                    transform: translateY(-50%);
+                }
+            }
         }
     }
     
