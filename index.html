@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Create your presence</title>
+</head>
+<body>
+    <header>
+        <div class="box-container">
+            <div class="birger-button not-active">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Homepage</a>
+            </li>
+            <li>
+                <a href="#">Features</a>
+            </li>
+            <li>
+                <a href="#">Solution For</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+        </ul>
+        <button>Start Creating</button>
+    </header>
+    <div class="bunner">
+        <div class="bunnerLeft">
+            <h1>Create your presence, make the app</h1>
+            <p>Take your brand to another level
+                of freedom, monetization, and impact. 
+                No need for code at all.
+            </p>
+        </div>
+        <div class="bunnerRight">
+            <div class="bunnerRightContainer">
+               <div class="containerDesctop">
+                    <img src="img/bunnerImgDesctop.png" alt="">
+                    <p class="live"><span></span>Live</p>
+               </div>
+                <div class="containerMobile">
+                    <img src="img/bunnerImgMobile.png" alt="" class="imgMobile">
+                    <p class="live"><span></span>Live</p>
+                </div>
+            </div>
+        </div>
+        <div class="parallax_contanier">
+            <div class="parallax layer1">
+            </div>
+            <div class="parallax layer2">
+            </div>
+        </div>
+    </div>
+    <div class="burger">
+        <div class="menu">
+          <ul>
+            <li>
+                <a href="#">Homepage</a>
+            </li>
+            <li>
+                <a href="#">Features</a>
+            </li>
+            <li>
+                <a href="#">Solution For</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div class="AppWeb">
+        <div class="AppWebLeft">
+            <img src="img/AppWebImg.png" alt="App&Web in total synchronization">
+        </div>
+        <div class="AppWebRight">
+            <h2>App&Web in total synchronization</h2>
+            <div class="AppWebRightContainer">
+                <h3>Grow your brand into a business</h3>
+                <p>Step up with [RND]. Take a strong position
+                of creating your own presence on each device.</p>
+
+                <h3>Spend less, earn more</h3>
+                <p>One subscription, two products, and lots of revenue. Create within one ecosystem, monetize your followers, and attract a new audience.</p>
+
+                <h3>Take it easy</h3>
+                <p>Pure creation with no code at all. Build your App&Web from scratch in 2 hours. Let us take care of the rest.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="js/burger.js"></script>
+    <script>
+        var currentX = '';
+        var currentY = '';
+        var movementConstant = 0.05;
+        $(document).mousemove(function(e) {
+        if (currentX == '') currentX = e.pageX;
+        var xdiff = e.pageX - currentX;
+        currentX = e.pageX;
+        if (currentY == '') currentY = e.pageY;
+        var ydiff = e.pageY - currentY;
+        currentY = e.pageY;
+        $('.parallax_contanier div').each(function(i, el) {
+            var movement = (i + 1) * (xdiff * movementConstant);
+            var movementy = (i + 1) * (ydiff * movementConstant);
+            var newX = $(el).position().left + movement;
+            var newY = $(el).position().top + movementy;
+            $(el).css('left', newX + 'px');
+            $(el).css('top', newY + 'px');
+        });
+        });
+    </script>
+</body>
+</html>
