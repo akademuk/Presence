@@ -767,9 +767,15 @@ h1 {
 }
 .AppWeb .AppWebLeft {
   width: 50%;
+  position: relative;
 }
 .AppWeb .AppWebLeft img {
   max-width: 100%;
+}
+.AppWeb .AppWebLeft .live {
+  left: auto;
+  right: 20px;
+  top: 70px;
 }
 .AppWeb .AppWebRight {
   width: 50%;
@@ -851,6 +857,12 @@ h1 {
     width: 100%;
     opacity: 0.6;
   }
+  .AppWeb .AppWebLeft .live {
+    display: none;
+  }
+  .AppWeb .AppWebLeft img {
+    min-width: 100%;
+  }
   .AppWeb .AppWebRight {
     position: absolute;
     width: 75%;
@@ -925,5 +937,8 @@ h1 {
   }
   .AppWeb .AppWebLeft img {
     min-height: 550px;
+  }
+  .bunner {
+    border-radius: 0;
   }
 }/*# sourceMappingURL=style.css.map */
