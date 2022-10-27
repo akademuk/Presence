@@ -67,6 +67,26 @@
         }
     }
 }
+@media (max-width: 1600px) {
+    .whoUsing {
+        padding: 100px 50px;
+    }
+    }
+    @media (max-width: 992px) {
+    .whoUsingContainer {
+        flex-direction: column;
+        .whoUsingSection {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+    .whoUsing > p {
+        width: 100%;
+    }
+    .whoUsingContainer .whoUsingSection:nth-of-type(3) .whoUsingSectionText {
+        border-right: 2px solid #FFFFFF;
+    }
+    }
 @media (max-width:576px) {
     .whoUsing {
         margin-top: 50px;

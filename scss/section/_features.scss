@@ -123,7 +123,7 @@
                 align-items: center;
                 &::after {
                     content: "";
-                    background: url(../../img/image1.png);
+                    background: url(../img/image1.png);
                     background-repeat: no-repeat;
                     background-size: contain;
                     width: 67px;
@@ -141,7 +141,7 @@
                 &:nth-of-type(1) {
                     &::after {
                         content: "";
-                        background: url(../../img/image2.png);
+                        background: url(../img/image2.png);
                         background-repeat: no-repeat;
                         background-size: contain;
                         width: 78px;
@@ -162,7 +162,7 @@
                 &:nth-of-type(1) {
                     &::after {
                         content: "";
-                        background: url(../../img/image3.png);
+                        background: url(../img/image3.png);
                         background-repeat: no-repeat;
                         background-size: contain;
                         width: 62px;
@@ -181,7 +181,7 @@
                 &:nth-of-type(1) {
                     &::after {
                         content: "";
-                        background: url(../../img/image4.png);
+                        background: url(../img/image4.png);
                         background-repeat: no-repeat;
                         background-size: contain;
                         width: 52px;
@@ -202,7 +202,7 @@
                 &:nth-of-type(1) {
                     &::after {
                         content: "";
-                        background: url(../../img/image5.png);
+                        background: url(../img/image5.png);
                         background-repeat: no-repeat;
                         background-size: contain;
                         width: 62px;
@@ -219,7 +219,7 @@
                 &:nth-of-type(1) {
                     &::after {
                         content: "";
-                        background: url(../../img/image6.png);
+                        background: url(../img/image6.png);
                         background-repeat: no-repeat;
                         background-size: contain;
                         width: 62px;
@@ -240,7 +240,7 @@
                     align-items: center;
                     &::after {
                         content: "";
-                        background: url(../../img/image7.png);
+                        background: url(../img/image7.png);
                         background-repeat: no-repeat;
                         background-size: contain;
                         width: 62px;
@@ -270,6 +270,11 @@
 .featuresSection {
     margin-bottom: 30px;
 }
+}
+@media (max-width: 992px) {
+    .featuresContainer .featuresSection:nth-of-type(4) .featuresBlockBottom .featuresBlockBottomText {
+        height: 230px;
+    }
 }
 @media (max-width: 768px) {
     .featuresContainer {
