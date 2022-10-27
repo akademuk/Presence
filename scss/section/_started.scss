@@ -92,6 +92,9 @@
     }
 } 
 @media (max-width: 576px) {
+    .startedLeft {
+        padding: 50px 16px;
+    }
     .startedLeft h2 {
         font-size: 30px;
         line-height: 35px;
@@ -101,8 +104,8 @@
         line-height: 18px;
     }
     .startedBtn {
-        padding: 23px;
-        font-size: 25px;
-        line-height: 30px;
+        padding: 16px !important;
+        font-size: 25px !important;
+        line-height: 30px !important;
     }
 }
