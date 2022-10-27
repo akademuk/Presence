@@ -1,11 +1,12 @@
 header {
     position: absolute;
-    top: 100px;
+    top: 48px;
     left: 7.8vw;
     right: 7.8vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 20;
     ul {
         display: flex;
         align-items: center;
@@ -102,7 +103,5 @@ header {
         padding: 10px;
     }
 }
-.box-container {
-    top: 30px;
-}
+
 }

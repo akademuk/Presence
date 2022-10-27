@@ -472,6 +472,10 @@
     }
     .featuresContainer .featuresSection:nth-of-type(4) .featuresBlockBottom .featuresBlockBottomText {
         height: max-content;
+        padding: 13px;
+    }
+    .featuresContainer .featuresSection:nth-of-type(3) .featuresBlockTop {
+        padding: 13px;
     }
 }
 @media (max-width: 300px) {

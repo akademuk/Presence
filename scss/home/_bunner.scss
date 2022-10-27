@@ -5,6 +5,7 @@
     align-items: flex-end;
     justify-content: space-between;
     border-radius: 0 0 60px 60px;
+    position: relative;
 }
 h1 {
     font-family: "Inter-ExtraBold";
@@ -131,84 +132,6 @@ h1 {
         }
     }
 }
-.parallax {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-    height: 40%;
-    opacity: 0.5;
-  }
-  
-  .layer1 {
-    top: 20%;
-    left: 10%;
-  }
-  
-  .layer2 {
-    top: 40%;
-    left: 60%;
-  }
-  
-  @keyframes moveX {
-    0% {
-      top: 0;
-      left: 0;
-      transform: rotate(0deg);
-    }
-    20% {
-      top: 30%;
-      left: 20%;
-      transform: rotate(72deg);
-    }
-    40% {
-      top: 5%;
-      left: 40%;
-      transform: rotate(144deg);
-    }
-    60% {
-      top: 30%;
-      left: 60%;
-      transform: rotate(216deg);
-    }
-    80% {
-      top: 4%;
-      left: 70%;
-      transform: rotate(288deg);
-    }
-    100% {
-      top: 2%;
-      left: 80%;
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes moveY {
-    0% {
-      top: 50%;
-      left: 50%;
-    }
-    20% {
-      top: 51%;
-      left: 51%;
-    }
-    40% {
-      top: 53%;
-      left: 53%;
-    }
-    60% {
-      top: 60%;
-      left: 65%;
-    }
-    80% {
-      top: 54%;
-      left: 57%;
-    }
-    100% {
-      top: 50%;
-      left: 55%;
-    }
-  }
 @media (max-width: 1600px) {
 .bunner {
   align-items: flex-start;
@@ -365,3 +288,4 @@ h1 {
   }
 }
 } 
+

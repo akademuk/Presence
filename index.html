@@ -9,6 +9,7 @@
     <title>Create your presence</title>
 </head>
 <body>
+    <div class="wrapper">
     <header>
         <div class="box-container">
             <div class="birger-button not-active">
@@ -51,12 +52,6 @@
                     <img src="img/bunnerImgMobile.png" alt="" class="imgMobile">
                     <p class="live"><span></span>Live</p>
                 </div>
-            </div>
-        </div>
-        <div class="parallax_contanier">
-            <div class="parallax layer1">
-            </div>
-            <div class="parallax layer2">
             </div>
         </div>
     </div>
@@ -231,28 +226,29 @@
             <img src="img/startedBacground.png" alt="">
         </div>
     </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
     <script src="js/burger.js"></script>
-    <script>
-        var currentX = '';
-        var currentY = '';
-        var movementConstant = 0.05;
-        $(document).mousemove(function(e) {
-        if (currentX == '') currentX = e.pageX;
-        var xdiff = e.pageX - currentX;
-        currentX = e.pageX;
-        if (currentY == '') currentY = e.pageY;
-        var ydiff = e.pageY - currentY;
-        currentY = e.pageY;
-        $('.parallax_contanier div').each(function(i, el) {
-            var movement = (i + 1) * (xdiff * movementConstant);
-            var movementy = (i + 1) * (ydiff * movementConstant);
-            var newX = $(el).position().left + movement;
-            var newY = $(el).position().top + movementy;
-            $(el).css('left', newX + 'px');
-            $(el).css('top', newY + 'px');
+    <!-- <script>
+     $(window).resize(function () {
+          calculateNewScale();
+      });
+
+     $(window).resize(function () {
+            calculateNewScale();
         });
-        });
-    </script>
+
+        calculateNewScale();
+
+        function calculateNewScale() {
+            var percentageOn1 = $(window).width() / 1920;
+            $(".wrapper").css({
+                "-moz-transform": "scale(" + percentageOn1 + ")",
+                "-webkit-transform": "scale(" + percentageOn1 + ")",
+                transform: "scale(" + percentageOn1 + ")",
+                "transform-origin": "left top",
+            });
+        }
+    </script> -->
 </body>
 </html>
