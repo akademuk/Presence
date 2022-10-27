@@ -121,8 +121,10 @@
         }
     }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .community  {
+        margin-top: 77px;
+        flex-direction: row;
         .communityLeft {
             img {
                 &:nth-of-type(1) {
@@ -136,21 +138,71 @@
             }
         }
     }
+    .communityRight .tittleBlue {
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 32px;
+    }
+    .communityLeft {
+        width: 600px !important;
+        height: 400px !important;
+    }
+    .community .communityLeft img:nth-of-type(1) {
+        width: 140px;
+        height: 305px;
+        left: 25% !important;
+        bottom: 25px;
+    }
+    .community .communityLeft img:nth-of-type(2) {
+        width: 140px;
+        height: 305px;
+        left: 75% !important;
+        bottom: 50px;
+    }
+    .communityRight p {
+        padding: 20px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .communityRight {
+        width: 40%;
+    }
+    .communityRight button {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 13px 25px;
+        margin-top: 27px;
+    }
+    
 }
 @media (max-width: 992px) {
-.communityRight {
-    width: 100%;
-}
+    .community {
+        margin-bottom: 0;
+        padding: 0 50px;
+    }
+    .communityRight {
+        margin: 0;
+        width: 55%;
+    }
+    .communityLeft {
+        width: 360px !important;
+    }
+    .communityRight .tittleBlue {
+        margin-bottom: 16px;
+    }
+    .communityRight button {
+        margin-top: 10px;
+    }
 }
 @media (max-width: 768px) {
     .community  {
-        .communityLeft  {
-            height: 700px;
-            img {
-                width: 200px;
-                height: 400px;
-            }
-        }
+        flex-direction: column;
+    }
+    .communityLeft {
+        width: 100% !important;
+    }
+    .communityRight {
+        width: 100%;
     }
 }
 @media (max-width: 576px) {
@@ -199,5 +251,9 @@
             }
         }
     }
-    
+}
+@media (max-width: 400px) {
+    .community {
+        padding: 0 16px;
+    }
 }

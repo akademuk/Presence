@@ -77,7 +77,7 @@
     font-family: "Inter-ExtraBold";
     border: none;
 }
-@media (max-width: 1350px) {
+@media (max-width: 1400px) {
 .offerAudienceSection {
     padding: 16px;
      h4 {
@@ -85,7 +85,7 @@
     }
 }
 .offerAudience {
-    padding: 50px !important;
+    padding: 75px !important;
    .whiteTittle{
         font-size: 50px;
         line-height: 55px;
@@ -93,30 +93,75 @@
         max-width: 100%;
     }
 }
+.offerAudience .whiteTittle {
+    font-size: 32px;
+    line-height: 39px;
+    width: 35%;
+}
+.offerAudienceContainer .offerAudienceSection {
+    padding: 24px 69px 24px 43px;
+}
+.offerAudienceContainer .offerAudienceSection h4 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+}
+.offerAudienceContainer .offerAudienceSection p {
+    font-size: 15px !important;
+    line-height: 18px !important;
+}
+.offerAudienceContainer .offerAudienceSection::after {
+    width: 35px;
+    height: 35px;
+    left: -17px;
+}
+.offerAudienceSection {
+    width: 410px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.offerAudienceContainer {
+    width: 900px;
+    max-width: 100%;
+}
+.offerAudienceContainer {
+    margin-bottom: 32px;
+}
+.offerAudienceBtn {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 11px 30px;
+}
 }
 @media (max-width: 1200px) {
-    .offerAudienceContainer  {
-        .offerAudienceSection  {
-            max-width: 49%;
-            h4 {
-                font-size: 25px !important;
-            }
-            p {
-                font-size: 18px !important;
-            }
-        }
+    .offerAudience {
+        top: 0;
+    }
+    .offerAudience .whiteTittle {
+        width: 100%;
     }
 }
+
 @media (max-width: 992px) {
+  .offerAudience {
+    padding: 50px !important;
+  }
+  .offerAudienceContainer .offerAudienceSection {
+    padding: 24px;
+  }
+  .offerAudienceContainer .offerAudienceSection h4 {
+    font-size: 18px !important;
+    line-height: 20px !important;
+  }
+  .offerAudienceContainer {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
     .offerAudienceContainer {
         flex-direction: column;
-    }
-    .offerAudienceSection {
-        max-width: 100% !important;
-        min-width: 100%;
-    }
-    .offerAudience {
-        top: -135px;
+        .offerAudienceSection {
+            max-width: 100%;
+        }
     }
 }
 @media (max-width: 576px) {

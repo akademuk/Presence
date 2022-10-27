@@ -87,90 +87,62 @@
         }
     }
 }
+.AppWeb .AppWebLeft .live {
+    width: 50px;
+  height: 16px;
+  background: #1C50FE;
+  border: 2px solid #FFFFFF;
+  border-radius: 18px;
+  padding: 8px 10px;
+  font-size: 10px;
+  line-height: 12px;
+  span {
+    width: 8px;
+    height: 8px;
+  }
 }
-@media (max-width: 1200px) {
-.AppWeb  {
-    .AppWebRight  {
-        padding: 100px 20px 0 20px;
-        h2 {
-            font-size: 40px;
-            line-height: 45px;
-            margin-bottom: 20px;
-        }
-        .AppWebRightContainer  {
-            h3 {
-                font-size: 25px;
-                line-height: 30px;
-            }
-            p {
-                font-size: 20px;
-                line-height: 23px;
-            }
-        }
-    }
+.AppWebRight {
+    padding: 90px 50px 115px 72px;
 }
+.AppWeb .AppWebRight h2 {
+    font-size: 32px;
+    line-height: 39px;
 }
-@media (max-width: 992px) {
-.AppWeb  {
-    flex-direction: column;
-    position: relative;
-    .AppWebLeft {
-        width: 100%;
-        opacity: 0.6;
-        .live {
-            display: none;
-        }
-        img {
-            min-width: 100%;
-            height: 100%;
-        }
-    }
-    .AppWebRight {
-        position: absolute;
-        width: 75%;
-        top: 100px;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
-        h2 {
-            font-size: 60px;
-            line-height: 65px;
-            margin-bottom: 60px;
-        }
-        .AppWebRightContainer {
-            h3 {
-                font-size: 30px;
-                line-height: 35px;
-            }
-            p {
-                font-size: 24px;
-                line-height: 30px;
-            }
-        }
-    }
+.AppWeb {
+    height: 650px;
+}
+.AppWeb .AppWebRight .AppWebRightContainer h3 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.AppWeb .AppWebRight .AppWebRightContainer p {
+    font-size: 15px;
+    line-height: 18px;
 }
 }
 @media (max-width: 768px) {
-.AppWeb  {
-    .AppWebRight {
-        top: 20px;
-        width: 100%;
-        h2 {
-            font-size: 50px;
-            line-height: 55px;
-            margin-bottom: 20px;
-        }
-        .AppWebRightContainer  {
-            h3 {
-                font-size: 30px;
-                line-height: 35px;
-            }
-            p {
-                font-size: 23px;
-                line-height: 28px;
-            }
-        }
-    }
+.AppWebLeft {
+    display: none;
+}
+.AppWebRight {
+    background: url(../../img/AppWebImg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100% !important;
+}
+.AppWebRightContainer {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 16px;
+    border-radius: 36px;
+    margin-bottom: 50px;
+}
+.AppWeb {
+    height: max-content;
+}
+.AppWeb .AppWebRight h2 {
+    color: #fff;
 }
 } 
 @media (max-width: 576px) {

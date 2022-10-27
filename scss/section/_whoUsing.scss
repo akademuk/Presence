@@ -71,22 +71,46 @@
     .whoUsing {
         padding: 100px 50px;
     }
+}
+@media (max-width: 1400px) {
+    .whoUsing {
+        margin-top: 80px;
+        padding: 62px 116px;
     }
-    @media (max-width: 992px) {
+    .whoUsing .tittleWhite {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .whoUsing > p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .whoUsingContainer .whoUsingSection h5 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .whoUsingContainer .whoUsingSection p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+@media (max-width: 992px) {
+    .whoUsing {
+        padding: 50px;
+    }
+}
+@media (max-width: 768px) {
     .whoUsingContainer {
         flex-direction: column;
         .whoUsingSection {
             width: 100%;
-            margin-bottom: 50px;
+            margin-bottom: 32px;
         }
     }
     .whoUsing > p {
         width: 100%;
     }
-    .whoUsingContainer .whoUsingSection:nth-of-type(3) .whoUsingSectionText {
-        border-right: 2px solid #FFFFFF;
-    }
-    }
+}
 @media (max-width:576px) {
     .whoUsing {
         margin-top: 50px;
