@@ -40,7 +40,7 @@ header {
 }
 @media (max-width: 768px) {
 .box-container {
-    display: flex;
+    display: none;
     top: 20px;
 }
 header {
@@ -48,8 +48,15 @@ header {
     max-width: 90%;
     min-width: 90%;
     ul {
-        display: none;
+        li {
+            margin-right: 20px;
+            a {
+                font-size: 22px;
+                line-height: 25px;
+            }
+        }
     }
+
 }
 }  
 @media (max-width: 576px) {
