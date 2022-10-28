@@ -118,8 +118,8 @@
         }
         > p {
             width: 100%;
-            font-size: 16px;
-            line-height: 18px;
+            font-size: 20px;
+            line-height: 24px;
             margin-bottom: 32px;
         }
         .whoUsingContainer {
@@ -147,7 +147,14 @@
             }
         }
     }
-    .whoUsingContainer .whoUsingSection:nth-of-type(3) .whoUsingSectionText {
-        border-right: 2px solid #FFFFFF;
-    }
+.whoUsing .whoUsingContainer .whoUsingSection .whoUsingSectionText h5 {
+    font-size: 28px;
+    line-height: 32px;
+}
+.whoUsing .whoUsingContainer .whoUsingSection .whoUsingSectionText p {
+    font-size: 20px;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+}
 }

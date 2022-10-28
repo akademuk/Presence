@@ -420,8 +420,8 @@ header button {
 }
 @media (max-width: 576px) {
   header button {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 28px;
+    line-height: 32px;
   }
   .menu.open-menu {
     height: 100vh;
@@ -634,6 +634,9 @@ h1 {
     max-width: 100%;
     min-width: 100%;
   }
+  h1 {
+    font-size: 40px;
+  }
   .containerDesctop .live {
     font-size: 14px;
     padding: 10px;
@@ -763,12 +766,12 @@ h1 {
     color: #fff;
   }
   .AppWeb .AppWebRight .AppWebRightContainer h3 {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 28px;
+    line-height: 32px;
   }
   .AppWeb .AppWebRight .AppWebRightContainer p {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 24px;
     color: #fff;
   }
   .AppWeb .AppWebLeft {
@@ -899,12 +902,12 @@ h1 {
     padding: 20px 20px 20px 40px !important;
   }
   .offerAudienceContainer .offerAudienceSection h4 {
-    font-size: 20px !important;
-    line-height: 25px;
+    font-size: 28px;
+    line-height: 32px;
   }
   .offerAudienceContainer .offerAudienceSection p {
-    font-size: 16px !important;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .offerAudienceBtn {
     padding: 23px;
@@ -1509,8 +1512,8 @@ h1 {
   }
   .whoUsing > p {
     width: 100%;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 24px;
     margin-bottom: 32px;
   }
   .whoUsing .whoUsingContainer {
@@ -1535,8 +1538,15 @@ h1 {
     font-size: 16px;
     line-height: 18px;
   }
-  .whoUsingContainer .whoUsingSection:nth-of-type(3) .whoUsingSectionText {
-    border-right: 2px solid #FFFFFF;
+  .whoUsing .whoUsingContainer .whoUsingSection .whoUsingSectionText h5 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .whoUsing .whoUsingContainer .whoUsingSection .whoUsingSectionText p {
+    font-size: 20px;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
   }
 }
 .started {
