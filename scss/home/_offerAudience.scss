@@ -1,25 +1,25 @@
 .offerAudience {
     background: linear-gradient(90deg, #181717 41.9%, #1C50FE 102.81%);
-    border-radius: 80px;
+    border-radius: 20px;
     position: relative;
     z-index: 1;
-    top: -145px;
-    padding: 120px 0;
-    padding-left: calc(275px - 5vw);
-    padding-right: calc(275px - 5vw);
+    padding: 74px 0 81px 0;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 73px;
+    .wrapperContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .whiteTittle {
         font-family: "Inter-ExtraBold";
-        font-size: 75px;
-        line-height: 91px;
+        font-size: 32px;
+        line-height: 39px;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
-        margin-bottom: 50px;
-        max-width: 80%;
+        margin-bottom: 20px;
+        max-width: 40%;
     }
 }
 .offerAudienceContainer {
@@ -27,29 +27,29 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 100%;
-    margin-bottom: 90px;
+    max-width: 905px;
+    margin-bottom: 32px;
     .offerAudienceSection {
-        max-width: 45%;
+        max-width: 409px;
         border: 2px solid #FFFFFF;
         filter: drop-shadow(0px 8px 23px rgba(0, 0, 0, 0.1));
-        border-radius: 36px;
-        padding: 33px 50px;
+        border-radius: 24px;
+        padding: 22px 67px 22px 41px;
         box-sizing: border-box;
         margin-bottom: 30px;
         position: relative;
         h4 {
             font-family: "Inter-ExtraBold";
-            font-size: 36px;
-            line-height: 44px;
+            font-size: 20px;
+            line-height: 24px;
             text-transform: uppercase;
             color: #FFFFFF;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         p {
             font-family: "Inter-Medium";
-            font-size: 26px;
-            line-height: 32px;
+            font-size: 15px;
+            line-height: 18px;
             color: #FFFFFF;
         }
         &::after {
@@ -57,153 +57,86 @@
             background: url(../img/icon.png);
             background-repeat: no-repeat;
             background-size: contain;
-            width: 49px;
-            height: 49px;
+            width: 35px;
+            height: 35px;
             position: absolute;
-            left: -25px;
+            left: -16px;
             top: 50%;
             transform: translateY(-50%);
+        }
+        &:nth-of-type(3) {
+            margin-bottom: 0;
+        }
+         &:nth-of-type(4) {
+            margin-bottom: 0;
         }
     }
 }
 .offerAudienceBtn {
     background: #1C50FE;
-    border-radius: 24px;
+    border-radius: 12px;
     margin: 0 auto;
-    padding: 23px 111px;
-    font-size: 32px;
-    line-height: 39px;
+    padding: 11px 30px;
+    font-size: 12px;
+    line-height: 15px;
     color: #FFFFFF;
     font-family: "Inter-ExtraBold";
     border: none;
 }
-// @media (max-width: 1400px) {
-// .offerAudienceSection {
-//     padding: 16px;
-//      h4 {
-//         font-size: 30px !important;
-//     }
-// }
-// .offerAudience {
-//     padding: 75px !important;
-//    .whiteTittle{
-//         font-size: 50px;
-//         line-height: 55px;
-//         margin-bottom: 30px;
-//         max-width: 100%;
-//     }
-// }
-// .offerAudience .whiteTittle {
-//     font-size: 32px;
-//     line-height: 39px;
-//     width: 35%;
-// }
-// .offerAudienceContainer .offerAudienceSection {
-//     padding: 24px 69px 24px 43px;
-// }
-// .offerAudienceContainer .offerAudienceSection h4 {
-//     font-size: 20px !important;
-//     line-height: 24px !important;
-// }
-// .offerAudienceContainer .offerAudienceSection p {
-//     font-size: 15px !important;
-//     line-height: 18px !important;
-// }
-// .offerAudienceContainer .offerAudienceSection::after {
-//     width: 35px;
-//     height: 35px;
-//     left: -17px;
-// }
-// .offerAudienceSection {
-//     width: 410px;
-//     box-sizing: border-box;
-//     max-width: 100%;
-// }
-// .offerAudienceContainer {
-//     width: 900px;
-//     max-width: 100%;
-// }
-// .offerAudienceContainer {
-//     margin-bottom: 32px;
-// }
-// .offerAudienceBtn {
-//     font-size: 12px;
-//     line-height: 15px;
-//     padding: 11px 30px;
-// }
-// }
-// @media (max-width: 1200px) {
-//     .offerAudience {
-//         top: 0;
-//     }
-//     .offerAudience .whiteTittle {
-//         width: 100%;
-//     }
-// }
-
-// @media (max-width: 992px) {
-//   .offerAudience {
-//     padding: 50px !important;
-//   }
-//   .offerAudienceContainer .offerAudienceSection {
-//     padding: 24px;
-//   }
-//   .offerAudienceContainer .offerAudienceSection h4 {
-//     font-size: 18px !important;
-//     line-height: 20px !important;
-//   }
-//   .offerAudienceContainer {
-//     margin-bottom: 0;
-//   }
-// }
-// @media (max-width: 768px) {
-//     .offerAudienceContainer {
-//         flex-direction: column;
-//         .offerAudienceSection {
-//             max-width: 100%;
-//         }
-//     }
-//     .offerAudience {
-//         top: -150px;
-//     }
-// }
-// @media (max-width: 576px) {
-//     .offerAudience {
-//         padding: 50px 25px !important;
-//         .whiteTittle {
-//             font-size: 30px;
-//             line-height: 35px;
-//         }
-//     }
-//     .offerAudienceContainer  {
-//         margin-bottom: 20px;
-//          .offerAudienceSection {
-//             padding: 20px 20px 20px 40px !important;
-//             h4 {
-//                 font-size: 20px !important;
-//                 line-height: 25px;
-//             }
-//             p {
-//                 font-size: 16px !important;
-//                 line-height: 18px;
-//             }
+@media (max-width: 768px) {
+.offerAudienceContainer {
+    flex-direction: column;
+    .offerAudienceSection {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+.offerAudience {
+    top: -50px;
+    margin-bottom: 0;
+    .whiteTittle {
+        max-width: 80%;
+    }
+}
+.offerAudienceContainer {
+    .offerAudienceSection {
+        &:nth-of-type(3) {
+            margin-bottom: 30px;
+        }
+    }
+}
+}
+@media (max-width: 576px) {
+    .offerAudience {
+        padding: 50px 25px !important;
+        .whiteTittle {
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+    .offerAudienceContainer  {
+        margin-bottom: 20px;
+         .offerAudienceSection {
+            padding: 20px 20px 20px 40px !important;
+            h4 {
+                font-size: 20px !important;
+                line-height: 25px;
+            }
+            p {
+                font-size: 16px !important;
+                line-height: 18px;
+            }
             
-//         }
-//     }
-//     .offerAudienceBtn {
-//         padding: 23px;
-//         font-size: 25px;
-//         line-height: 30px;
-//     }
-//     .offerAudienceContainer .offerAudienceSection::after {
-//         width: 30px;
-//         height: 30px;
-//         left: -15px;   
-//     }
-// }
-// @media (max-width: 440px)  {
-//     .offerAudience {
-//         border-radius: 0;
-//         position: static;
-//     }
-// }
+        }
+    }
+    .offerAudienceBtn {
+        padding: 23px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .offerAudienceContainer .offerAudienceSection::after {
+        width: 30px;
+        height: 30px;
+        left: -15px;   
+    }
+}

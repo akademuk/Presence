@@ -2,21 +2,19 @@
     overflow: hidden;
 }
 .wrapper {
-    width: 1920px;
-    height: 1920px;
+    width: 1240px;
+    height: 1240px;
     position: relative;
+    @media(max-width: 768px) {
+        width: 768px;
+        height: 768px;
+        .wrapperContainer {
+            max-width: 90%;
+            margin: 0 auto;
+        }   
+    }
 }
-// @media(max-width: 1000px) {
-//     .wrapper {
-//         width: 1000px;
-//         height: 1000px;
-//         position: relative;
-//     }  
-// }
-// @media(max-width: 600px) {
-//     .wrapper {
-//         width: 600px;
-//         height: 600px;
-//         position: relative;
-//     }  
-// }
+.wrapperContainer {
+    max-width: 1050px;
+    margin: 0 auto;
+}
