@@ -16,6 +16,10 @@
   font-weight: 800;
   font-style: normal;
 }
+.bodyActive {
+  overflow: hidden;
+}
+
 .box-container {
   border-radius: 2px;
   position: absolute;
@@ -298,6 +302,58 @@
   text-decoration: none;
 }
 
+.footer {
+  padding: 25px 27px;
+  width: 100%;
+  background: #DFE6FF;
+  border-radius: 24px;
+  box-sizing: border-box;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  padding-left: 90px;
+}
+.footer ul li {
+  margin-right: 79px;
+}
+.footer ul li a {
+  font-family: "Inter-Medium";
+  font-size: 32px;
+  line-height: 39px;
+  color: #181717;
+  text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+  .footer ul li a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    padding: 30px 50px;
+  }
+  .footer ul {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .footer ul li {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    padding: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .footer ul li {
+    margin-right: 10px;
+  }
+}
 header {
   position: absolute;
   top: 48px;
@@ -389,6 +445,14 @@ header button {
   header button {
     font-size: 16px;
     padding: 10px;
+  }
+  .menu.open-menu {
+    height: 100vh;
+    padding-top: 150px;
+  }
+  .menu.open-menu ul li a {
+    font-size: 33px;
+    line-height: 38px;
   }
 }
 .bunner {
@@ -808,10 +872,13 @@ h1 {
   .AppWeb .AppWebRight h2 {
     color: #fff;
   }
+  .AppWeb .AppWebRight {
+    padding-bottom: 100px;
+  }
 }
 @media (max-width: 576px) {
   .AppWeb .AppWebRight {
-    padding: 100px 2vw 0 2vw;
+    padding: 100px 2vw 100px 2vw;
   }
   .AppWeb .AppWebRight h2 {
     font-size: 30px;
@@ -1017,6 +1084,9 @@ h1 {
   }
   .offerAudienceContainer .offerAudienceSection {
     max-width: 100%;
+  }
+  .offerAudience {
+    top: -150px;
   }
 }
 @media (max-width: 576px) {
@@ -1429,9 +1499,13 @@ h1 {
     height: max-content;
   }
 }
+@media (max-width: 768px) {
+  .features {
+    margin-top: 0;
+  }
+}
 @media (max-width: 576px) {
   .features {
-    margin-top: 50px;
     text-align: center;
     padding: 0 16px;
   }
@@ -1494,6 +1568,11 @@ h1 {
   }
   .featuresContainer .featuresSection:nth-of-type(3) .featuresBlockTop {
     padding: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .features {
+    margin-top: 50px;
   }
 }
 @media (max-width: 300px) {
@@ -1701,6 +1780,9 @@ h1 {
   }
 }
 @media (max-width: 576px) {
+  .community {
+    padding: 0 16px !important;
+  }
   .communityRight {
     margin: 50px 0 0 0 !important;
     padding: 0 16px;

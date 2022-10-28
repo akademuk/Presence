@@ -144,11 +144,14 @@
 .AppWeb .AppWebRight h2 {
     color: #fff;
 }
+.AppWeb .AppWebRight {
+    padding-bottom: 100px;
+}
 } 
 @media (max-width: 576px) {
 .AppWeb  {
     .AppWebRight {
-        padding: 100px 2vw 0 2vw;
+        padding: 100px 2vw 100px 2vw;
         h2 {
             font-size: 30px;
             line-height: 35px;

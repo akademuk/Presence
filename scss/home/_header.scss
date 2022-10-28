@@ -103,5 +103,12 @@ header {
         padding: 10px;
     }
 }
-
+.menu.open-menu  {
+    height: 100vh;
+    padding-top: 150px;
+}
+.menu.open-menu ul li a {
+    font-size: 33px;
+    line-height: 38px;
+}
 }

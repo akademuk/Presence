@@ -413,9 +413,13 @@
         height: max-content;
     }
 }
+@media (max-width: 768px) {
+    .features {
+        margin-top: 0;
+    }
+}
 @media (max-width: 576px) {
     .features {
-        margin-top: 50px;
         text-align: center;
         padding: 0 16px;
         h2 {
@@ -476,6 +480,11 @@
     }
     .featuresContainer .featuresSection:nth-of-type(3) .featuresBlockTop {
         padding: 13px;
+    }
+}
+@media (max-width: 400px)  {
+    .features {
+        margin-top: 50px;
     }
 }
 @media (max-width: 300px) {
