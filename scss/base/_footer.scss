@@ -24,21 +24,17 @@
     ul {
         li {
             margin-right: 30px;
+            a {
+                font-size: 32px;
+                line-height: 39px;
+            }
         }
     }
 }
 }
 @media (max-width: 576px) {
     .footer {
+        height: 100px;
         padding: 16px;
-    }
-}
-@media (max-width: 400px) {
-    .footer {
-        ul {
-            li {
-                margin-right: 10px;
-            }
-        }
     }
 }
