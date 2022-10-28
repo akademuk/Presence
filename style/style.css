@@ -1595,7 +1595,7 @@ h1 {
 }
 @media (max-width: 576px) {
   .startedLeft {
-    padding: 50px 16px;
+    padding: 100px 16px;
   }
   .startedLeft h2 {
     font-size: 30px;
