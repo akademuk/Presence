@@ -1,3 +1,22 @@
 .bodyActive {
     overflow: hidden;
 }
+.wrapper {
+    width: 1920px;
+    height: 1920px;
+    position: relative;
+}
+// @media(max-width: 1000px) {
+//     .wrapper {
+//         width: 1000px;
+//         height: 1000px;
+//         position: relative;
+//     }  
+// }
+// @media(max-width: 600px) {
+//     .wrapper {
+//         width: 600px;
+//         height: 600px;
+//         position: relative;
+//     }  
+// }

@@ -47,152 +47,152 @@
         }
     }
 }
-@media (max-width: 1750px) {
-.AppWeb {
-    .AppWebRight {
-        h2 {
-            font-size: 65px;
-            line-height: 71px;
-        }
-    }
-}
-}
-@media (max-width: 1600px) {
-.AppWeb  {
-    .AppWebRight {
-        padding: 123px 50px 0 50px;
-        h2 {
-            font-size: 50px;
-            line-height: 55px;
-            margin-bottom: 30px;
-        }
-        .AppWebRightContainer  {
-            h3 {
-                font-size: 30px;
-                line-height: 35px;
-            }
-            p {
-                font-size: 24px;
-                line-height: 30px;
-            }
-        }
-    }
-}
-}
-@media (max-width: 1400px) {
-.AppWeb {
-    .AppWebLeft  {
-        img {
-            height: 900px;
-        }
-    }
-}
-.AppWeb .AppWebLeft .live {
-    width: 50px;
-  height: 16px;
-  background: #1C50FE;
-  border: 2px solid #FFFFFF;
-  border-radius: 18px;
-  padding: 8px 10px;
-  font-size: 10px;
-  line-height: 12px;
-  span {
-    width: 8px;
-    height: 8px;
-  }
-}
-.AppWebRight {
-    padding: 90px 50px 115px 72px;
-}
-.AppWeb .AppWebRight h2 {
-    font-size: 32px;
-    line-height: 39px;
-}
-.AppWeb {
-    height: 650px;
-}
-.AppWeb .AppWebRight .AppWebRightContainer h3 {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 0;
-}
-.AppWeb .AppWebRight .AppWebRightContainer p {
-    font-size: 15px;
-    line-height: 18px;
-}
-}
-@media (max-width: 768px) {
-.AppWebLeft {
-    display: none;
-}
-.AppWebRight {
-    background: url(../img/AppWebImg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    width: 100% !important;
-}
-.AppWebRightContainer {
-    background: rgba(255, 255, 255, 0.5);
-    padding: 16px;
-    border-radius: 36px;
-    margin-bottom: 50px;
-}
-.AppWeb {
-    height: max-content;
-}
-.AppWeb .AppWebRight h2 {
-    color: #fff;
-}
-.AppWeb .AppWebRight {
-    padding-bottom: 100px;
-}
-} 
-@media (max-width: 576px) {
-.AppWeb  {
-    .AppWebRight {
-        padding: 100px 2vw 100px 2vw;
-        h2 {
-            font-size: 30px;
-            line-height: 35px;
-            color: #fff;
-        }
-        .AppWebRightContainer {
-           h3 {
-            font-size: 20px;
-            line-height: 25px;
-           }
-           p {
-            font-size: 16px;
-            line-height: 18px;
-            color: #fff;
-            }
-        }
-    }
-    .AppWebLeft  {
-        height: 100%;
-        min-height: 100%;
-        opacity: 1;
-    }
-}
-}
-@media (max-width: 440px) {
-    .AppWeb {
-        top: 0;
-        .AppWebRight {
-            padding: 16px;
-            h2 {
-                font-size: 25px;
-                line-height: 30px;
-            }
-            .AppWebRightContainer  {
-                h3 {
-                    margin-bottom: 5px;
-                }
-            }
-        }
-    }
-    .bunner {
-        border-radius: 0;
-    }
-} 
+// @media (max-width: 1750px) {
+// .AppWeb {
+//     .AppWebRight {
+//         h2 {
+//             font-size: 65px;
+//             line-height: 71px;
+//         }
+//     }
+// }
+// }
+// @media (max-width: 1600px) {
+// .AppWeb  {
+//     .AppWebRight {
+//         padding: 123px 50px 0 50px;
+//         h2 {
+//             font-size: 50px;
+//             line-height: 55px;
+//             margin-bottom: 30px;
+//         }
+//         .AppWebRightContainer  {
+//             h3 {
+//                 font-size: 30px;
+//                 line-height: 35px;
+//             }
+//             p {
+//                 font-size: 24px;
+//                 line-height: 30px;
+//             }
+//         }
+//     }
+// }
+// }
+// @media (max-width: 1400px) {
+// .AppWeb {
+//     .AppWebLeft  {
+//         img {
+//             height: 900px;
+//         }
+//     }
+// }
+// .AppWeb .AppWebLeft .live {
+//     width: 50px;
+//   height: 16px;
+//   background: #1C50FE;
+//   border: 2px solid #FFFFFF;
+//   border-radius: 18px;
+//   padding: 8px 10px;
+//   font-size: 10px;
+//   line-height: 12px;
+//   span {
+//     width: 8px;
+//     height: 8px;
+//   }
+// }
+// .AppWebRight {
+//     padding: 90px 50px 115px 72px;
+// }
+// .AppWeb .AppWebRight h2 {
+//     font-size: 32px;
+//     line-height: 39px;
+// }
+// .AppWeb {
+//     height: 650px;
+// }
+// .AppWeb .AppWebRight .AppWebRightContainer h3 {
+//     font-size: 20px;
+//     line-height: 24px;
+//     margin-bottom: 0;
+// }
+// .AppWeb .AppWebRight .AppWebRightContainer p {
+//     font-size: 15px;
+//     line-height: 18px;
+// }
+// }
+// @media (max-width: 768px) {
+// .AppWebLeft {
+//     display: none;
+// }
+// .AppWebRight {
+//     background: url(../img/AppWebImg.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: top;
+//     width: 100% !important;
+// }
+// .AppWebRightContainer {
+//     background: rgba(255, 255, 255, 0.5);
+//     padding: 16px;
+//     border-radius: 36px;
+//     margin-bottom: 50px;
+// }
+// .AppWeb {
+//     height: max-content;
+// }
+// .AppWeb .AppWebRight h2 {
+//     color: #fff;
+// }
+// .AppWeb .AppWebRight {
+//     padding-bottom: 100px;
+// }
+// } 
+// @media (max-width: 576px) {
+// .AppWeb  {
+//     .AppWebRight {
+//         padding: 100px 2vw 100px 2vw;
+//         h2 {
+//             font-size: 30px;
+//             line-height: 35px;
+//             color: #fff;
+//         }
+//         .AppWebRightContainer {
+//            h3 {
+//             font-size: 20px;
+//             line-height: 25px;
+//            }
+//            p {
+//             font-size: 16px;
+//             line-height: 18px;
+//             color: #fff;
+//             }
+//         }
+//     }
+//     .AppWebLeft  {
+//         height: 100%;
+//         min-height: 100%;
+//         opacity: 1;
+//     }
+// }
+// }
+// @media (max-width: 440px) {
+//     .AppWeb {
+//         top: 0;
+//         .AppWebRight {
+//             padding: 16px;
+//             h2 {
+//                 font-size: 25px;
+//                 line-height: 30px;
+//             }
+//             .AppWebRightContainer  {
+//                 h3 {
+//                     margin-bottom: 5px;
+//                 }
+//             }
+//         }
+//     }
+//     .bunner {
+//         border-radius: 0;
+//     }
+// } 
