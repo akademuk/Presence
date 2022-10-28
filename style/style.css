@@ -448,7 +448,7 @@ header button {
 }
 .bunner::after {
   content: "";
-  background: url(../../img/Frame.png);
+  background: url(../img/Frame.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1187,6 +1187,9 @@ h1 {
   .featuresContainer .featuresSection1 .featuresBlockBottom .featuresBlockBottomText {
     bottom: -30px;
   }
+  .featuresContainer .featuresSection1 .featuresBlockBottom img {
+    border-radius: 24px;
+  }
   .featuresContainer .featuresSection2 .featuresBlockBottom .featuresBlockBottomText {
     bottom: 0;
   }
@@ -1198,6 +1201,9 @@ h1 {
   }
   .featuresContainer .featuresSection4 .featuresBlockBottom .featuresBlockBottomText {
     bottom: 0px;
+  }
+  .featuresContainer .featuresSection4 .featuresBlockBottom img {
+    border-radius: 24px;
   }
 }
 .community {
