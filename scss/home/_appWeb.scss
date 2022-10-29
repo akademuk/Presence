@@ -90,6 +90,10 @@
     background-size: cover;
     background-position: top;
     width: 100% !important;
+    padding-bottom: 100px;
+    h2 {
+        color: #fff;
+    }
 }
 .AppWebRightContainer {
     background: rgba(255, 255, 255, 0.5);
@@ -100,15 +104,14 @@
 .AppWeb {
     height: max-content;
 }
-.AppWeb .AppWebRight h2 {
-    color: #fff;
-}
-.AppWeb .AppWebRight {
-    padding-bottom: 100px;
-}
 } 
 @media (max-width: 576px) {
 .AppWeb  {
+    .AppWebLeft  {
+        height: 100%;
+        min-height: 100%;
+        opacity: 1;
+    }
     .AppWebRight {
         padding: 100px 2vw 100px 2vw;
         h2 {
@@ -127,11 +130,6 @@
             color: #fff;
             }
         }
-    }
-    .AppWebLeft  {
-        height: 100%;
-        min-height: 100%;
-        opacity: 1;
     }
 }
 }

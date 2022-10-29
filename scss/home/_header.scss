@@ -39,10 +39,6 @@ header {
     }
 }
 @media (max-width: 768px) {
-.box-container {
-    display: none;
-    top: 20px;
-}
 header {
     width: 100%;
     max-width: 90%;
@@ -65,13 +61,5 @@ header {
         font-size: 28px;
         line-height: 32px;
     }
-}
-.menu.open-menu  {
-    height: 100vh;
-    padding-top: 150px;
-}
-.menu.open-menu ul li a {
-    font-size: 33px;
-    line-height: 38px;
 }
 }

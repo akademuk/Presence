@@ -41,291 +41,6 @@
   margin: 0 auto;
 }
 
-.box-container {
-  border-radius: 2px;
-  position: absolute;
-  top: 13px;
-  left: 97%;
-  transform: translate(-50%, -50%);
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  z-index: 10;
-  display: none;
-}
-
-.birger-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 12px;
-  cursor: pointer;
-}
-
-.birger-button span {
-  display: block;
-  width: 30px;
-  border-radius: 3px;
-  height: 2px;
-  background: #fff;
-  transition: all 0.3s;
-  position: relative;
-  margin: 0 auto;
-}
-
-.birger-button span:nth-of-type(1) {
-  margin-bottom: 6px;
-}
-
-.birger-button span:nth-of-type(2) {
-  margin-bottom: 6px;
-  width: 30px;
-}
-
-.active span:nth-child(1) {
-  -webkit-animation: ease 0.7s top forwards;
-          animation: ease 0.7s top forwards;
-}
-
-.not-active span:nth-child(1) {
-  -webkit-animation: ease 0.7s top-2 forwards;
-          animation: ease 0.7s top-2 forwards;
-}
-
-.active span:nth-child(2) {
-  -webkit-animation: ease 0.7s scaled forwards;
-          animation: ease 0.7s scaled forwards;
-}
-
-.not-active span:nth-child(2) {
-  -webkit-animation: ease 0.7s scaled-2 forwards;
-          animation: ease 0.7s scaled-2 forwards;
-}
-
-.active span:nth-child(3) {
-  -webkit-animation: ease 0.7s bottom forwards;
-          animation: ease 0.7s bottom forwards;
-}
-
-.not-active span:nth-child(3) {
-  -webkit-animation: ease 0.7s bottom-2 forwards;
-          animation: ease 0.7s bottom-2 forwards;
-}
-
-@-webkit-keyframes top {
-  0% {
-    top: 0;
-    transform: rotate(0);
-  }
-  50% {
-    top: 5px;
-    transform: rotate(0);
-  }
-  100% {
-    top: 5px;
-    transform: rotate(45deg);
-  }
-}
-
-@keyframes top {
-  0% {
-    top: 0;
-    transform: rotate(0);
-  }
-  50% {
-    top: 5px;
-    transform: rotate(0);
-  }
-  100% {
-    top: 5px;
-    transform: rotate(45deg);
-  }
-}
-@-webkit-keyframes top-2 {
-  0% {
-    top: 22px;
-    transform: rotate(45deg);
-  }
-  50% {
-    top: 22px;
-    transform: rotate(0deg);
-  }
-  100% {
-    top: 0;
-    transform: rotate(0deg);
-  }
-}
-@keyframes top-2 {
-  0% {
-    top: 22px;
-    transform: rotate(45deg);
-  }
-  50% {
-    top: 22px;
-    transform: rotate(0deg);
-  }
-  100% {
-    top: 0;
-    transform: rotate(0deg);
-  }
-}
-@-webkit-keyframes bottom {
-  0% {
-    bottom: 0;
-    transform: rotate(0);
-  }
-  50% {
-    bottom: 10px;
-    transform: rotate(0);
-  }
-  100% {
-    bottom: 10px;
-    transform: rotate(135deg);
-  }
-}
-@keyframes bottom {
-  0% {
-    bottom: 0;
-    transform: rotate(0);
-  }
-  50% {
-    bottom: 10px;
-    transform: rotate(0);
-  }
-  100% {
-    bottom: 10px;
-    transform: rotate(135deg);
-  }
-}
-@-webkit-keyframes bottom-2 {
-  0% {
-    bottom: 22px;
-    transform: rotate(135deg);
-  }
-  50% {
-    bottom: 22px;
-    transform: rotate(0);
-  }
-  100% {
-    bottom: 0;
-    transform: rotate(0);
-  }
-}
-@keyframes bottom-2 {
-  0% {
-    bottom: 22px;
-    transform: rotate(135deg);
-  }
-  50% {
-    bottom: 22px;
-    transform: rotate(0);
-  }
-  100% {
-    bottom: 0;
-    transform: rotate(0);
-  }
-}
-@-webkit-keyframes scaled {
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes scaled {
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@-webkit-keyframes scaled-2 {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes scaled-2 {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.menu.open-menu {
-  flex-direction: column;
-  justify-content: center;
-  padding: 100px 5vw 100px 5vw;
-  overflow: scroll;
-  max-width: 100vw;
-  box-sizing: border-box;
-  background: linear-gradient(180deg, rgb(24, 23, 23) 42.47%, #1C50FE 100%);
-}
-
-.menu {
-  position: fixed;
-  top: -150%;
-}
-
-.open-menu {
-  overflow: hidden;
-  width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  z-index: 9;
-  -webkit-animation: burger-open 0.3s linear;
-  -webkit-animation-fill-mode: forwards;
-  animation: burger-open 0.3s linear;
-  animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes burger-open {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 0%;
-  }
-}
-@keyframes burger-open {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 0%;
-  }
-}
-.menu.open-menu {
-  min-width: 100%;
-}
-.menu.open-menu ul {
-  text-align: center;
-}
-.menu.open-menu ul li {
-  margin-bottom: 40px;
-}
-.menu.open-menu ul li a {
-  font-family: "Inter-Medium";
-  font-size: 50px;
-  line-height: 55px;
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
 .footer {
   padding: 25px 0;
   width: 100%;
@@ -405,10 +120,6 @@ header button {
 }
 
 @media (max-width: 768px) {
-  .box-container {
-    display: none;
-    top: 20px;
-  }
   header {
     width: 100%;
     max-width: 90%;
@@ -426,14 +137,6 @@ header button {
   header button {
     font-size: 28px;
     line-height: 32px;
-  }
-  .menu.open-menu {
-    height: 100vh;
-    padding-top: 150px;
-  }
-  .menu.open-menu ul li a {
-    font-size: 33px;
-    line-height: 38px;
   }
 }
 .bunner {
@@ -741,6 +444,10 @@ h1 {
     background-size: cover;
     background-position: top;
     width: 100% !important;
+    padding-bottom: 100px;
+  }
+  .AppWebRight h2 {
+    color: #fff;
   }
   .AppWebRightContainer {
     background: rgba(255, 255, 255, 0.5);
@@ -753,14 +460,13 @@ h1 {
     height: -moz-max-content;
     height: max-content;
   }
-  .AppWeb .AppWebRight h2 {
-    color: #fff;
-  }
-  .AppWeb .AppWebRight {
-    padding-bottom: 100px;
-  }
 }
 @media (max-width: 576px) {
+  .AppWeb .AppWebLeft {
+    height: 100%;
+    min-height: 100%;
+    opacity: 1;
+  }
   .AppWeb .AppWebRight {
     padding: 100px 2vw 100px 2vw;
   }
@@ -777,11 +483,6 @@ h1 {
     font-size: 20px;
     line-height: 24px;
     color: #fff;
-  }
-  .AppWeb .AppWebLeft {
-    height: 100%;
-    min-height: 100%;
-    opacity: 1;
   }
 }
 .offerAudience {
@@ -1590,12 +1291,13 @@ h1 {
   margin-bottom: 20px;
 }
 .startedLeft button {
-  font-size: 20px;
-  line-height: 24px;
+  font-family: "Inter-ExtraBold";
+  font-size: 12px;
+  line-height: 15px;
   color: #FFFFFF;
-  padding: 20px 23px;
   background: #1C50FE;
-  border-radius: 18px;
+  border-radius: 12px;
+  padding: 13px 11px;
   border: none;
   width: -webkit-max-content;
   width: -moz-max-content;
