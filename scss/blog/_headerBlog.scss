@@ -1,0 +1,39 @@
+.blogHeader {
+    background: transparent;
+    .wrapperContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        left: 50%;
+        top: 27px;
+        transform: translateX(-50%);
+        width: 100%;
+        ul {
+            display: flex;
+            li {
+                margin-right: 65px;
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+                a {
+                    font-family: "Inter-Regular";
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+            }
+        }
+        button {
+            font-family: "Inter-Medium";
+            font-size: 20px;
+            line-height: 24px;
+            color: #F5F2E1;
+            background: #181717;
+            border-radius: 12px;
+            padding: 12px;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Create your presence</title>
+</head>
+<body class="body">
+    <div class="wrapper">
+        <header class="headerBuilder">
+            <ul>
+                <li>
+                    <a href="#">Homepage</a>
+                </li>
+                <li>
+                    <a href="#">Features</a>
+                </li>
+                <li>
+                    <a href="#">Solution For</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+            </ul>
+            <button>Start Creating</button>
+        </header><!--Hader-->
+
+        <div class="bunnerBuilder">
+            <div class="wrapperContainer">
+                <h1>Create your native app fast and easy</h1>
+                <p>Build the professional application in hours. Use drag and drop to make it easy. Publish at the same time on Apple Store and Google Play.</p>
+                <div class="bunnerPosition">
+                        <div class="bunnerPositionContainer">
+                            <h3>Catch the trend</h3>
+                            <p>Mobile is on top like never before. Use this opportunity to advance your brand into
+                            a business.</p>
+                        </div>
+
+                        <div class="bunnerPositionContainer">
+                            <h3>Be closer</h3>
+                            <p>Create an engaging application to stay on the touch distance with your followers.</p>
+                        </div>
+
+                        <div class="bunnerPositionContainer">
+                            <h3>Do it yourself</h3>
+                            <p>No need for a developer’s team, no need for extra costs. All the creation process belongs to you, and you only.</p>
+                        </div>
+                </div>
+            </div>
+        </div><!--Bunner-->
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script>
+        if ($(window).width() > 768) {
+            $(window).resize(function () {
+                calculateNewScale();
+            });
+            calculateNewScale();
+            function calculateNewScale() {
+                var percentageOn1 = $(window).width() / 1240;
+                $(".wrapper").css({
+                    "-moz-transform": "scale(" + percentageOn1 + ")",
+                    "-webkit-transform": "scale(" + percentageOn1 + ")",
+                    transform: "scale(" + percentageOn1 + ")",
+                    "transform-origin": "left top",
+                });
+            }
+        }
+
+        if ($(window).width() < 768) {
+        $(window).resize(function () {
+            calculateNewScale();
+        });
+        calculateNewScale();
+        function calculateNewScale() {
+            var percentageOn1 = $(window).width() / 768;
+            $(".wrapper").css({
+                "-moz-transform": "scale(" + percentageOn1 + ")",
+                "-webkit-transform": "scale(" + percentageOn1 + ")",
+                transform: "scale(" + percentageOn1 + ")",
+                "transform-origin": "left top",
+            });
+        }
+        }
+    </script>
+</body>
+</html>
