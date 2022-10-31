@@ -1,0 +1,45 @@
+.alsoLike .wrapperContainer h2 {
+  font-family: "Inter-ExtraBold";
+  font-size: 55px;
+  line-height: 65px;
+  color: #1C50FE;
+  text-align: center;
+  margin-bottom: 84px;
+}
+
+.alsoLikeContainer {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 36px;
+}
+.alsoLikeContainer .alsoLikeSection {
+  width: 333px;
+  height: 422px;
+  margin-right: 63px;
+  background: #FFFFFF;
+  box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+}
+.alsoLikeContainer .alsoLikeSection img {
+  max-width: 100%;
+  border-radius: 24px;
+  margin-bottom: 32px;
+}
+.alsoLikeContainer .alsoLikeSection:nth-last-child(1) {
+  margin-right: 0;
+}
+.alsoLikeContainer .alsoLikeSection h3 {
+  font-family: "Inter-ExtraBold";
+  font-size: 25px;
+  line-height: 30px;
+  color: #181717;
+  margin-bottom: 20px;
+  padding: 0 22px;
+}
+.alsoLikeContainer .alsoLikeSection p {
+  font-family: "Inter-Regular";
+  font-size: 20px;
+  line-height: 30px;
+  color: #181717;
+  padding: 0 22px;
+}/*# sourceMappingURL=alsoLike.css.map */
