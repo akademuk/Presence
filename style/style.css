@@ -1792,7 +1792,7 @@ h1 {
   }
 }
 .bunnerBuilder {
-  background: url(../../img/bunnerBuilder.png);
+  background: url(../img/bunnerBuilder.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
