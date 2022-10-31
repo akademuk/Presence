@@ -38,3 +38,27 @@
         border: none;
     }
 }
+@media (max-width: 768px) {
+.headerBuilder {
+    width: 100%;
+    max-width: 90%;
+    min-width: 90%;
+    ul {
+        li {
+            margin-right: 20px;
+            a {
+                font-size: 22px;
+                line-height: 25px;
+            }
+        }
+    }  
+}
+}  
+@media (max-width: 576px) {
+.headerBuilder {
+    button {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+}

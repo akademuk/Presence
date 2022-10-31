@@ -1,0 +1,78 @@
+.support {
+    padding: 74px 92px 74px 61px;
+    margin-bottom: 100px;
+    h2 {
+        font-family: "Inter-ExtraBold";
+        font-size: 32px;
+        line-height: 39px;
+        text-transform: uppercase;
+        color: #181717;
+        margin-bottom: 32px;
+    }
+    
+}
+.supportContainer {
+    display: flex;
+    position: relative;
+    .supportContainerLeft,
+    .supportContainerRight{
+        img {
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+        h3 {
+            font-family: "Inter-ExtraBold";
+            font-size: 20px;
+            line-height: 24px;
+            color: #1C50FE;
+            padding-left: 50px;
+        }
+        p {
+            font-family: "Inter-Medium";
+            font-size: 15px;
+            line-height: 18px;
+            color:#181717;
+            margin-bottom: 30px;
+            padding-left: 50px;
+            width: 50%;
+        }
+    }
+}
+.supportContainerRight {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    z-index: -1;
+}
+@media (max-width: 768px) {
+    .supportContainer .supportContainerLeft, 
+    .supportContainer .supportContainerRight {
+        width: 350px;
+    }
+    .supportContainerRight  {
+        right: 20px;
+        top: 70px;
+    }
+    .supportContainer .supportContainerLeft h3, 
+    .supportContainer .supportContainerRight h3 {
+        padding-left: 20px;
+    }
+    .supportContainer .supportContainerLeft p, 
+    .supportContainer .supportContainerRight p {
+        padding-left: 20px;
+    }
+    .supportContainer .supportContainerLeft img, 
+    .supportContainer .supportContainerRight img {
+        margin-bottom: 10px;
+    }
+    .supportContainer .supportContainerRight p {
+        width: 100%;
+    }
+    .support {
+        margin-bottom: 0;
+        padding-right: 20px;
+    }
+    .supportContainer .supportContainerLeft p {
+        width: 80%;
+    }
+}

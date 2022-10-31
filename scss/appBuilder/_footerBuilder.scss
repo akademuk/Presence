@@ -1,0 +1,21 @@
+.footerBuilder {
+    background: #DFE6FF;
+    border-radius: 12px;
+    padding: 25px 0 25px 61px;
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            margin-right: 79px;
+            a {
+                font-family: "Inter-Medium";
+                font-size: 14px;
+                line-height: 17px;                
+                color: #181717;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
