@@ -202,7 +202,7 @@
     
     
     <script>
-        if ($(window).width() > 1000) {
+        if ($(window).width() > 768) {
 
 $(window).resize(function () {
     calculateNewScale();
@@ -210,7 +210,7 @@ $(window).resize(function () {
 
 calculateNewScale();
 function calculateNewScale() {
-    var percentageOn1 = $(window).width() / 1920;
+    var percentageOn1 = $(window).width() / 1240;
     $(".wrapper").css({
         "-moz-transform": "scale(" + percentageOn1 + ")",
         "-webkit-transform": "scale(" + percentageOn1 + ")",
@@ -220,7 +220,7 @@ function calculateNewScale() {
 }
 }
 
-if ($(window).width() < 1000) {
+if ($(window).width() < 768) {
 
 $(window).resize(function () {
     calculateNewScale();
@@ -229,7 +229,7 @@ $(window).resize(function () {
 calculateNewScale();
 
 function calculateNewScale() {
-    var percentageOn1 = $(window).width() / 1000;
+    var percentageOn1 = $(window).width() / 768;
     $(".wrapper").css({
         "-moz-transform": "scale(" + percentageOn1 + ")",
         "-webkit-transform": "scale(" + percentageOn1 + ")",
