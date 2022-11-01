@@ -81,6 +81,18 @@
   border: 2px solid #181717;
 }
 
+@media (max-width: 768px) {
+  .bunnerArticle .wrapperContainer h1 {
+    width: 80%;
+  }
+  .bunnerArticle .wrapperContainer .bunnerArticleBtn {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bunnerArticle .wrapperContainer .bunnerArticleBtn button {
+    margin-bottom: 16px;
+  }
+}
 .mainArticleTop {
   padding: 43px 0 71px 0;
 }
@@ -105,6 +117,9 @@
 }
 .mainArticleTop .wrapperContainer .breadCrumbs a:nth-of-type(3)::after {
   content: none;
+}
+.mainArticleTop .wrapperContainer .breadCrumbs a:nth-of-type(2) {
+  margin-left: 5px;
 }
 .mainArticleTop .wrapperContainer .breadCrumbs a::after {
   content: ">";
@@ -211,6 +226,22 @@
   color: #181717;
 }
 
+@media (max-width: 768px) {
+  .articleFlex {
+    flex-direction: column-reverse;
+    max-height: 100%;
+  }
+  .articleFlexRight {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 50px;
+    height: 100%;
+  }
+  .articleFlexLeft {
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+}
 .mainArticleCenter {
   margin-bottom: 100px;
 }
@@ -255,6 +286,16 @@
   color: #181717;
 }
 
+@media (max-width: 768px) {
+  .mainArticleCenter .wrapperContainer .mainArticleCenterFlex img {
+    width: 100px;
+    height: 100px;
+  }
+  .mainArticleCenter .wrapperContainer .mainArticleCenterFlex .mainContainer p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
 .alsoLike {
   position: relative;
 }
@@ -315,76 +356,25 @@
   line-height: 30px;
   color: #181717;
   padding: 0 22px;
-}/*# sourceMappingURL=index.css.map */line-height: 18px;
-  text-transform: uppercase;
-  color: #181717;
 }
 
 @media (max-width: 768px) {
-  .letUs {
-    padding: 50px;
+  .alsoLikeContainer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
-  .letUsContainer .letUsSection {
-    margin-right: 20px;
-    padding: 20px 20px 0 20px;
-    box-sizing: border-box;
+  .alsoLikeContainer .alsoLikeSection {
+    width: 45%;
+    margin-right: 32px;
   }
-  .letUsContainer .letUsSection h3 {
-    font-size: 18px;
-    line-height: 20px;
+  .alsoLikeContainer .alsoLikeSection:nth-of-type(3) {
+    margin-top: 16px;
   }
-  .letUsContainer .letUsSection p {
-    font-size: 12px;
-    line-height: 15px;
+  .alsoLike::after {
+    height: 700px;
   }
-  .letUs::after {
-    width: 100%;
-    height: 400px;
-    top: auto;
-    bottom: 0;
-  }
-}
-.payment {
-  margin-top: 150px;
-  padding-left: 61px;
-  margin-bottom: 73px;
-  display: flex;
-  align-items: center;
-}
-.payment .paymentRight {
-  width: 479px;
-  height: 487px;
-  background: url(../img/paymentImg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 245px;
-}
-.payment .paymentRight::after {
-  content: "";
-  display: flex;
-  background: rgba(28, 80, 254, 0.5);
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-}
-.payment .paymentRight img {
-  position: relative;
-  z-index: 2;
-}
-
-.paymentLeft {
-  display: flex;
-  flex-direction: column;
+}/*# sourceMappingURL=index.css.map */ column;
   width: 450px;
 }
 .paymentLeft h2 {

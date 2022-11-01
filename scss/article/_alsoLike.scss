@@ -59,3 +59,21 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .alsoLikeContainer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .alsoLikeSection {
+            width: 45%;
+            margin-right: 32px;
+            &:nth-of-type(3) {
+                margin-top: 16px;
+            
+            }
+        }
+    }
+    .alsoLike::after {
+        height: 700px;
+    }
+}

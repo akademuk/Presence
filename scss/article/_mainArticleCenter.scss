@@ -45,3 +45,21 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .mainArticleCenter  {
+        .wrapperContainer  {
+            .mainArticleCenterFlex  {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+                .mainContainer  {
+                    p {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

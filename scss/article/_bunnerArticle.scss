@@ -40,3 +40,19 @@
         }
     }
 }
+@media (max-width: 768px) {
+    .bunnerArticle  {
+        .wrapperContainer {
+            h1 {
+                width: 80%;
+            }
+            .bunnerArticleBtn {
+                flex-wrap: wrap;
+                justify-content: center;
+                button {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
