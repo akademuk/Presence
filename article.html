@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.min.css">
     <title>Create your presence</title>
@@ -202,8 +201,45 @@
     
     
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
     <script>
+        if ($(window).width() > 1000) {
+
+$(window).resize(function () {
+    calculateNewScale();
+});
+
+calculateNewScale();
+function calculateNewScale() {
+    var percentageOn1 = $(window).width() / 1920;
+    $(".wrapper").css({
+        "-moz-transform": "scale(" + percentageOn1 + ")",
+        "-webkit-transform": "scale(" + percentageOn1 + ")",
+        transform: "scale(" + percentageOn1 + ")",
+        "transform-origin": "left top",
+    });
+}
+}
+
+if ($(window).width() < 1000) {
+
+$(window).resize(function () {
+    calculateNewScale();
+});
+
+calculateNewScale();
+
+function calculateNewScale() {
+    var percentageOn1 = $(window).width() / 1000;
+    $(".wrapper").css({
+        "-moz-transform": "scale(" + percentageOn1 + ")",
+        "-webkit-transform": "scale(" + percentageOn1 + ")",
+        transform: "scale(" + percentageOn1 + ")",
+        "transform-origin": "left top",
+    });
+}
+}
+    </script>
+    <!-- <script>
         if ($(window).width() > 768) {
             $(window).resize(function () {
                 calculateNewScale();
@@ -239,6 +275,6 @@
             });
         }
         }
-    </script>
+    </script> -->
 </body>
 </html>
