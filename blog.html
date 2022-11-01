@@ -182,38 +182,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-    <script>
-        if ($(window).width() > 768) {
-            $(window).resize(function () {
-                calculateNewScale();
-            });
-            calculateNewScale();
-            function calculateNewScale() {
-                var percentageOn1 = $(window).width() / 1240;
-                $(".wrapper").css({
-                    "-moz-transform": "scale(" + percentageOn1 + ")",
-                    "-webkit-transform": "scale(" + percentageOn1 + ")",
-                    transform: "scale(" + percentageOn1 + ")",
-                    "transform-origin": "left top",
-                });
-            }
-        }
-
-        if ($(window).width() < 768) {
-        $(window).resize(function () {
-            calculateNewScale();
-        });
-        calculateNewScale();
-        function calculateNewScale() {
-            var percentageOn1 = $(window).width() / 768;
-            $(".wrapper").css({
-                "-moz-transform": "scale(" + percentageOn1 + ")",
-                "-webkit-transform": "scale(" + percentageOn1 + ")",
-                transform: "scale(" + percentageOn1 + ")",
-                "transform-origin": "left top",
-            });
-        }
-        }
-    </script>
+    <script src="js/transform.js"></script>
 </body>
 </html>
