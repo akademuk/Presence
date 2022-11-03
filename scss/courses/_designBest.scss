@@ -36,7 +36,7 @@
     }
     &::after {
         content: "";
-        background: url(../../img/designBestFrame.png);
+        background: url(../img/designBestFrame.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: left;
@@ -71,7 +71,7 @@
         color: #181717;
        &::before {
         content: "";
-        background: url(../../img/designBestList.png);
+        background: url(../img/designBestList.png);
         background-size: contain;
         background-repeat: no-repeat;
         width: 24px;
@@ -112,5 +112,14 @@
 }
 .designBest::after {
     top: -100px !important;
+}
+.coursesBunner::after {
+    background-size: contain !important;
+}
+.designBest .wrapperContainer .designBestLeft {
+    margin-right: 0 !important;
+}
+.onlineCourseContainer p {
+    width: 100% !important;
 }
 }

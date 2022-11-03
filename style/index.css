@@ -82,7 +82,7 @@
 }
 .designBest::after {
   content: "";
-  background: url(../../img/designBestFrame.png);
+  background: url(../img/designBestFrame.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
@@ -118,7 +118,7 @@
 }
 .designBestList li::before {
   content: "";
-  background: url(../../img/designBestList.png);
+  background: url(../img/designBestList.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 24px;
@@ -154,6 +154,15 @@
   }
   .designBest::after {
     top: -100px !important;
+  }
+  .coursesBunner::after {
+    background-size: contain !important;
+  }
+  .designBest .wrapperContainer .designBestLeft {
+    margin-right: 0 !important;
+  }
+  .onlineCourseContainer p {
+    width: 100% !important;
   }
 }
 .onlineCourse {
@@ -283,13 +292,7 @@
 
 .itHappenContainer {
   height: 300px;
-}/*# sourceMappingURL=index.css.map */nter .wrapperContainer .mainArticleCenterFlex img {
-  width: 164px;
-  height: 164px;
-  margin-right: 18px;
-}
-.mainArticleCenter .wrapperContainer .mainArticleCenterFlex .mainContainer h3 {
-  font-family: "Inter-ExtraBold";
+}/*# sourceMappingURL=index.css.map */xtraBold";
   font-size: 20px;
   line-height: 24px;
   color: #181717;
