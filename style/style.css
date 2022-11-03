@@ -2957,5 +2957,33 @@ h1 {
 }
 
 .itHappenContainer {
-  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.itHappenContainer .itHappenSection {
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.itHappenContainer .itHappenSection p {
+  font-family: "Inter-Medium";
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #181717;
+}
+.itHappenContainer .itHappenSection svg {
+  height: 100px;
+}
+.itHappenContainer .itHappenSection svg path {
+  stroke: #1C50FE !important;
+}
+.itHappenContainer .itHappenSection svg circle {
+  stroke: #1C50FE !important;
 }/*# sourceMappingURL=style.css.map */
