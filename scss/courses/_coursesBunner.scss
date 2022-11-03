@@ -1,0 +1,44 @@
+.coursesBunner {
+    padding: 291px 0 220px 0;
+    background: url(../img/coursesBunner.png), #181717;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    &::after {
+        content: "";
+        background: url(../img/coursesFrame.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 0 0 20px 20px;
+        top: 0;
+        left: 0;
+    }
+    .wrapperContainer {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-family: "Inter-ExtraBold";
+            font-size: 46px;
+            line-height: 56px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 49px;
+            width: 60%;
+        }
+        p {
+            font-family: "Inter-Medium";
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+            width: 40%;
+        }
+    }
+}

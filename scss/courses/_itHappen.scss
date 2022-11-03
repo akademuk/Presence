@@ -1,0 +1,38 @@
+.itHappen {
+    margin: 74px 0;
+    .wrapperContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 82px;
+        p:nth-of-type(2) {
+            font-family: "Inter-Medium";
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #181717;
+            margin-bottom: 9px;
+        }
+        h2 {
+            font-family: "Inter-ExtraBold";
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #181717;
+            margin-bottom: 28px;
+        }
+        > p {
+            font-family: "Inter-Regular";
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #181717;
+            margin-bottom: 52px;
+            width: 45%;
+        }
+    }
+}
+.itHappenContainer {
+    height: 300px;
+}
