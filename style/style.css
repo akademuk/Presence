@@ -2817,7 +2817,7 @@ h1 {
     width: 375px !important;
   }
   .coursesBunner .wrapperContainer h1 {
-    width: 70% !important;
+    width: 100% !important;
   }
   .designBest::after {
     top: -100px !important;
@@ -2835,6 +2835,70 @@ h1 {
     width: 65%;
     font-size: 23px;
     line-height: 32px;
+  }
+  .coursesBunner .wrapperContainer h1 {
+    font-size: 40px;
+    line-height: 45px;
+    width: 100%;
+  }
+  .designBestList li {
+    font-size: 23px !important;
+    line-height: 32px !important;
+  }
+  .designBestList li::before {
+    width: 34px;
+    height: 34px;
+  }
+  .whoUsing .whoUsingContainer .whoUsingSection .whoUsingSectionText p {
+    font-size: 23px !important;
+    line-height: 32px !important;
+  }
+  .itHappen .wrapperContainer > p {
+    width: 100% !important;
+    font-size: 23px !important;
+    line-height: 32px !important;
+  }
+  .onlineCourseContainer p {
+    font-size: 23px !important;
+    line-height: 32px !important;
+  }
+  .itHappenContainer .itHappenSection {
+    width: 32% !important;
+  }
+  .itHappenContainer .itHappenSection p {
+    font-size: 23px !important;
+    line-height: 32px !important;
+  }
+  .monetizeWisely {
+    flex-direction: column;
+    padding-left: 0 !important;
+  }
+  .monetizeWisely .paymentLeft {
+    width: 90% !important;
+    text-align: center;
+    overflow: hidden;
+  }
+  .monetizeWisely .paymentLeft p {
+    font-size: 23px !important;
+    line-height: 32px !important;
+  }
+  .monetizeWisely .paymentLeft h3 {
+    font-size: 28px !important;
+    line-height: 40px !important;
+  }
+  .monetizeWisely .paymentRight {
+    width: 100% !important;
+  }
+  .monetizeWisely .paymentLeft h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .monetizeWisely .paymentRight {
+    width: auto !important;
+  }
+  .monetizeWisely .paymentRight img {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
   }
 }
 .onlineCourse {
