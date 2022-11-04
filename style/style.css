@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Inter-Regular";
   src: url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.otf") format("opentype");
@@ -2830,6 +2831,11 @@ h1 {
   .onlineCourseContainer p {
     width: 100% !important;
   }
+  .coursesBunner .wrapperContainer p {
+    width: 65%;
+    font-size: 23px;
+    line-height: 32px;
+  }
 }
 .onlineCourse {
   padding: 68px 0;
@@ -3248,4 +3254,179 @@ h1 {
   .startedOff .startedLeft .designBestRight h2 {
     text-align: left !important;
   }
+}
+.paymentBunner {
+  padding: 293px 0 255px 0;
+  background: url(../img/paymentsBunner.png) !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: -2px !important;
+}
+.paymentBunner::after {
+  content: none;
+}
+
+.yourGame {
+  margin: 45px 0 150px 0;
+}
+.yourGame .yourGameContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 62px;
+}
+.yourGame .yourGameContainer .yourGameContainerLeft {
+  width: 470px;
+  min-width: 470px;
+}
+.yourGame .yourGameContainer .yourGameContainerLeft h2 {
+  font-family: "Inter-ExtraBold";
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.yourGame .yourGameContainer .yourGameContainerLeft p:nth-of-type(1) {
+  font-size: 20px;
+  line-height: 24px;
+  color: #181717;
+  font-family: "Inter-Medium";
+  margin-bottom: 34px;
+}
+.yourGame .yourGameContainer .yourGameContainerLeft h3 {
+  font-family: "Inter-ExtraBold";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1C50FE;
+  margin-bottom: 5px;
+}
+.yourGame .yourGameContainer .yourGameContainerLeft p {
+  font-family: "Inter-Regular";
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 20px;
+  color: #181717;
+  margin-bottom: 30px;
+}
+
+.yourGameContainerRight {
+  margin-right: 25px;
+  width: 691px;
+  background: url(../img/paymentsImg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 491px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.yourGameHover {
+  display: flex;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.yourGameHover .yourGameSection {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 23px rgba(0, 0, 0, 0.1);
+  border-radius: 36px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 27px;
+  width: 179px;
+  max-width: 179px;
+  box-sizing: border-box;
+  position: relative;
+  border: 3px solid transparent;
+  height: 179px;
+}
+.yourGameHover .yourGameSection p:nth-of-type(1) {
+  font-family: "Inter-ExtraBold";
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #181717;
+  margin-bottom: 18px;
+}
+.yourGameHover .yourGameSection p:nth-of-type(2) {
+  font-family: "Inter-ExtraBold";
+  font-size: 54px;
+  line-height: 65px;
+  text-transform: uppercase;
+  color: #1C50FE;
+  margin-bottom: 21px;
+  position: relative;
+  margin-left: auto;
+}
+.yourGameHover .yourGameSection p:nth-of-type(2) span {
+  font-family: "Inter-Medium";
+  font-size: 10px;
+  line-height: 30px;
+  color: #181717;
+}
+.yourGameHover .yourGameSection p:nth-of-type(2):after {
+  content: "£";
+  font-family: "Inter-ExtraBold";
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #1C50FE;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25px;
+}
+.yourGameHover .yourGameSection button {
+  font-family: "Inter-ExtraBold";
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #181717;
+  padding: 7px 14px;
+  border: 1px solid #000000;
+  border-radius: 36px;
+}
+.yourGameHover .yourGameSection:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.popular {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  border-radius: 40px 40px 0 0;
+  background: #1C50FE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular p {
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF !important;
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+.yourGameHover .yourGameSection:nth-of-type(2) {
+  margin-top: -20px;
+  border: 3px solid #1C50FE;
+  height: 234px;
+  padding-top: 50px;
+}
+.yourGameHover .yourGameSection:nth-of-type(2) button {
+  background: #181717;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

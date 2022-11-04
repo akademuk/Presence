@@ -1,0 +1,11 @@
+.paymentBunner {
+  padding: 293px 0 255px 0;
+  background: url(../img/paymentsBunner.png) !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: -3px;
+}
+.paymentBunner::after {
+  content: none;
+}/*# sourceMappingURL=payments.css.map */
