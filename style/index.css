@@ -320,8 +320,8 @@
     margin-bottom: 20px;
   }
   .featureHomePageContainer .featureHomePageSection .top {
-    min-height: 280px;
-    max-height: 300px;
+    min-height: 200px;
+    max-height: 200px;
   }
   .featureHomePageContainer .featureHomePageSection .top ul li:before {
     left: -1px;
@@ -338,7 +338,39 @@
     line-height: 23px !important;
     margin-top: 20px;
   }
-}/*# sourceMappingURL=index.css.map */lumn;
+  .businessBox .wrapperContainer .customizationRight h2 {
+    margin-top: 50px;
+  }
+  .businessBox .wrapperContainer .customizationRight {
+    margin-top: 0;
+  }
+  .featureHomePageContainer .featureHomePageSection {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=index.css.map */gin-bottom: 28px;
+}
+.itHappen .wrapperContainer > p {
+  font-family: "Inter-Regular";
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #181717;
+  margin-bottom: 52px;
+  width: 45%;
+}
+
+.itHappenContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.itHappenContainer .itHappenSection {
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
 }
@@ -357,44 +389,7 @@
 }
 .itHappenContainer .itHappenSection svg circle {
   stroke: #1C50FE !important;
-}/*# sourceMappingURL=index.css.map */: 30px;
-}
-.paymentLeft p {
-  font-family: "Inter-Medium";
-  font-size: 20px;
-  line-height: 24px;
-  color: #181717;
-  margin-bottom: 40px;
-}
-
-.paymentLeftContainer h3 {
-  font-family: "Inter-ExtraBold";
-  font-size: 20px;
-  line-height: 24px;
-  color: #1C50FE;
-}
-.paymentLeftContainer p {
-  font-family: "Inter-Medium";
-  font-size: 15px;
-  line-height: 18px;
-  color: #181717;
-  margin-bottom: 30px;
-}
-.paymentLeftContainer p:nth-last-child(1) {
-  margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-  .payment {
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
-  .paymentRight {
-    width: 300px !important;
-    height: 350px !important;
-    min-width: 300px;
-    min-height: 350px;
-    margin-left: 20px !important;
+}/*# sourceMappingURL=index.css.map */px !important;
   }
   .paymentRight img {
     width: 80%;

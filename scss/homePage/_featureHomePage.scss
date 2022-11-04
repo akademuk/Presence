@@ -274,8 +274,8 @@
     margin-bottom: 20px;
 }
 .featureHomePageContainer .featureHomePageSection .top {
-    min-height: 280px;
-    max-height: 300px;
+    min-height: 200px;
+    max-height: 200px;
 }
 .featureHomePageContainer .featureHomePageSection .top ul li:before {
     left: -1px;
@@ -291,5 +291,14 @@
     font-size: 23px !important;
     line-height: 23px !important;
     margin-top: 20px;
+}
+.businessBox .wrapperContainer .customizationRight  h2{
+    margin-top: 50px;
+}
+.businessBox .wrapperContainer .customizationRight {
+    margin-top: 0;
+}
+.featureHomePageContainer .featureHomePageSection {
+    width: 100% !important;
 }
 }
