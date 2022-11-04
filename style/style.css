@@ -3190,4 +3190,62 @@ h1 {
 .startedOff .startedRight {
   right: 11% !important;
   left: auto !important;
+}
+
+.startedOff .startedLeft .designBestRight .designBestList {
+  width: 85%;
+}
+.startedOff .startedLeft .designBestRight .designBestList li b {
+  font-family: "Inter-ExtraBold";
+  display: contents;
+}
+.startedOff .startedLeft .designBestRight .designBestList li::before {
+  min-width: 24px;
+}
+
+@media (max-width: 768px) {
+  .businessBox {
+    margin-top: 100px;
+  }
+  .businessBox .wrapperContainer {
+    min-width: 90%;
+    flex-direction: column;
+  }
+  .businessBox .wrapperContainer .bunnerRightContainer {
+    margin: 0 auto;
+  }
+  .businessBox .wrapperContainer .customizationRight {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .featureHomePageContainer {
+    padding-left: 16px;
+    padding-right: 16px;
+    min-width: 90%;
+  }
+  .featureHomePageContainer .featureHomePageSection {
+    width: 32%;
+  }
+  .homeCustomization {
+    margin-top: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: column;
+  }
+  .homeCustomization .customizationLeft {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .homeCustomization .customizationRight {
+    width: 80%;
+    text-align: center;
+  }
+  .homeCustomization .customizationRight .customizationRightSection {
+    width: 100%;
+  }
+  .startedOff .startedLeft .designBestRight h2 {
+    text-align: left !important;
+  }
 }/*# sourceMappingURL=style.css.map */
