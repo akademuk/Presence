@@ -18,3 +18,14 @@
     max-width: 1050px;
     margin: 0 auto;
 }
+.style {
+    display: flex;
+    li {
+        margin-left: 5px;
+        background: black;
+       a {
+        color: #fff;
+        text-decoration: none;
+       }
+    }
+}

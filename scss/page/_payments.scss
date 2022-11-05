@@ -1,0 +1,384 @@
+.paymentBunner {
+    padding: 293px 0 255px 0;
+    background: url(../img/paymentsBunner.png) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -2px !important;
+    &::after {
+        content: none;
+    }
+}
+.yourGame {
+    margin: 45px 0 150px 0;
+    .yourGameContainer {
+        display: flex;
+        align-items: center;
+        padding-left: 62px;
+        .yourGameContainerLeft {
+            width: 470px;
+            min-width: 470px;
+            h2 {
+                font-family: "Inter-ExtraBold";
+                font-size: 32px;
+                line-height: 39px;
+                text-transform: uppercase;
+                color: #000000;
+                margin-bottom: 30px;
+            }
+            p {
+                &:nth-of-type(1) {
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #181717;
+                    font-family: "Inter-Medium";
+                    margin-bottom: 34px;
+                }
+            }
+            h3 {
+                font-family: "Inter-ExtraBold";
+                font-weight: 800;
+                font-size: 20px;
+                line-height: 24px;
+                color: #1C50FE;
+                margin-bottom: 5px;
+            }
+            p {
+                font-family: "Inter-Regular";
+                font-weight: 800;
+                font-size: 15px;
+                line-height: 20px;
+                color: #181717;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+.yourGameContainerRight {
+    margin-right: 25px;
+    width: 691px;
+    background: url(../img/paymentsImg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 491px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+.yourGameHover {
+    display: flex;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    .yourGameSection {
+        background: #FFFFFF;
+        box-shadow: 0px 8px 23px rgba(0, 0, 0, 0.1);
+        border-radius: 36px;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 27px;
+        width: 179px;
+        max-width: 179px;
+        box-sizing: border-box;
+        position: relative;
+        border: 3px solid transparent;
+        height: 179px;
+        p {
+            &:nth-of-type(1) {
+                font-family: "Inter-ExtraBold";
+                font-size: 10px;
+                line-height: 12px;
+                text-transform: uppercase;
+                color: #181717;
+                margin-bottom: 18px;
+            }
+            &:nth-of-type(2) {
+                font-family: "Inter-ExtraBold";
+                font-size: 54px;
+                line-height: 65px;
+                text-transform: uppercase;
+                color: #1C50FE;
+                margin-bottom: 21px;
+                position: relative;
+                margin-left: auto;
+                span {
+                    font-family: "Inter-Medium";
+                    font-size: 10px;
+                    line-height: 30px;
+                    color: #181717;
+                }
+                &:after {
+                    content: "£";
+                    font-family: "Inter-ExtraBold";
+                    font-size: 32px;
+                    line-height: 39px;
+                    text-transform: uppercase;
+                    color: #1C50FE;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -25px;
+                }
+            }
+        }
+        button {
+            font-family: "Inter-ExtraBold";
+            font-size: 10px;
+            line-height: 12px;
+            text-transform: uppercase;
+            color: #181717;
+            padding: 7px 14px;
+            border: 1px solid #000000;
+            border-radius: 36px;
+        }
+        &:nth-last-of-type(1) {
+            margin-right: 0;
+        }
+    }
+}
+.popular {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    border-radius: 40px 40px 0 0;
+    background: #1C50FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF !important;
+        text-align: center;
+        margin-bottom: 0 !important;
+    }
+}
+.yourGameHover {
+    .yourGameSection {
+        &:nth-of-type(2) {
+            margin-top: -20px;
+            border: 3px solid #1C50FE;
+            height: 234px;
+            padding-top: 50px;
+            button {
+                background: #181717;
+                color: #fff;
+            }
+        }
+    }
+}
+.needSell {
+    background: linear-gradient(0deg, #181717, #181717);
+    border-radius: 20px;
+    position: relative;
+    height: 579px;
+    box-sizing: border-box;
+    padding: 100px 0 160px 0;
+    &::after {
+        content: "";
+        background: url(../img/Payments3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; 
+    }
+    &::before {
+        content: "";
+        background: url(../img/mask.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+    .wrapperContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        max-width: 1100px;
+        z-index: 1;
+       
+        h2 {
+            font-family: "Inter-ExtraBold";
+            font-size: 32px;
+            line-height: 39px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 85px;
+        }
+    }
+}
+.needSellContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.needSellSection {
+    background: url(../img/backgorund.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 359px;
+    height: 246px;
+    box-sizing: border-box;
+    padding: 0 31px 0 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+        font-family: "Inter-ExtraBold";
+        font-size: 20px;
+        line-height: 11px;
+        text-transform: uppercase;
+        color: #1C50FE;
+        margin-bottom: 10px;
+    }
+    p {
+        font-family: "Inter-Medium";
+        font-size: 15px;
+        line-height: 18px;
+        color: #181717;
+    }
+}
+.needSellPosition {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 120px;
+}
+.needSellPosition2 {
+    position: absolute;
+    z-index: 0;
+    bottom: -100px;
+    left: -65px;
+    max-width: 100%;
+    object-fit: contain;
+}
+.needSellSection {
+    position: relative;
+    &:nth-of-type(1) {
+        &::after {
+            content: "";
+            background:url(../img/Payments4.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: -10px;
+            top: 90px;
+            width: 64px;
+            height: 64px;
+        }
+    }
+    &:nth-of-type(2) {
+        &::after {
+            content: "";
+            background:url(../img/Payments5.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: -10px;
+            top: 90px;
+            width: 64px;
+            height: 64px;
+        }
+    }
+    &:nth-of-type(3) {
+        &::after {
+            content: "";
+            background:url(../img/Payments6.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: -10px;
+            top: 90px;
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+.monetizeEase {
+    padding-left: 0 !important;
+    .paymentRight {
+        margin-left: 0 !important;
+        margin-right: 66px !important;
+        width: 619px;
+        min-width: 619px;
+        height: 548px;
+        img {
+            max-width: 100%;
+            display: block;
+            max-height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        &::after {
+            content: none !important;
+        }
+    }
+    .paymentLeft {
+        > p {
+            font-family: "Inter-Medium";
+            width: 60%;
+            font-size: 20px;
+            line-height: 24px;
+            color: #181717;
+        }
+    }
+}
+.paidLike {
+    padding: 73px 0 85px 0;
+    text-align: center;
+    h2 {
+        font-family: "Inter-ExtraBold";
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #181717;
+        margin-bottom: 28px;
+    }
+    p {
+        font-family: "Inter-Regular";
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #181717;
+        width: 62%;
+        margin: 0 auto;
+    }
+}
+.paidLikeContainer {
+    margin: 48px 0 61px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+        width: 25%;
+        text-align: center;
+        margin-bottom: 50px;
+        img {
+            max-width: 100%;
+        }
+    }
+}
