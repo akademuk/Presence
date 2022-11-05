@@ -3912,4 +3912,7 @@ header button {
 }
 .healthFitness .yourGameContainer .designBestRight .designBestList li {
   color: #fff;
+}
+.healthFitness .yourGameContainer .designBestRight .designBestList li::before {
+  filter: brightness(0) invert(1);
 }/*# sourceMappingURL=index.css.map */
