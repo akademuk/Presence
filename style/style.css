@@ -4581,4 +4581,7 @@ header button {
   .bunnerFaq {
     border-radius: 0 0 20px 20px;
   }
+  .faqContent::after {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
