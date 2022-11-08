@@ -62,7 +62,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        bottom: -145px;
+        bottom: -273px;
         left: 0;
         z-index: 2;
     }
@@ -92,7 +92,7 @@
 }
 .communityPosition2 {
     position: absolute;
-    top: -100px;
+    top: -57px;
     right: 0;
     min-width: 100%;
 }
@@ -275,15 +275,45 @@
             border-radius: 12px;
             padding: 20px 18px 13px 20px;
             border: none;
+            transition: all 0.3s;
+            box-shadow: none;
+            &:hover {
+                transition: all 0.3s;
+                -webkit-box-shadow: 10px 10px 93px 0px rgba(97,71,255,1);
+                -moz-box-shadow: 10px 10px 93px 0px rgba(97,71,255,1);
+                box-shadow: 10px 10px 93px 0px rgba(97,71,255,1);
+            }
         }
         img {
             position: absolute;
-            bottom: -250px;
+            bottom: -278px;
             z-index: 0;
         }
     }
 }
+.btnCom {
+    font-family: "Inter-ExtraBold";
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #6147FF;
+    border-radius: 12px;
+    padding: 20px 18px 13px 20px;
+    border: none;
+    transition: all 0.3s;
+    box-shadow: none;
+    margin-top: 70px;
+    &:hover {
+        transition: all 0.3s;
+        -webkit-box-shadow: 10px 10px 93px 0px rgba(97,71,255,1);
+        -moz-box-shadow: 10px 10px 93px 0px rgba(97,71,255,1);
+        box-shadow: 10px 10px 93px 0px rgba(97,71,255,1);
+    }
+}
 @media(max-width: 768px) {
+    .btnCom {
+        display: none;
+    }
     .bunnerCommunity {
         background: url(../img/comunityMobile.png),#181717;
         background-repeat: no-repeat !important;
