@@ -4547,4 +4547,38 @@ header button {
   .bunnerFaq:after {
     top: 50%;
   }
+  .faqContent .faqWrapper {
+    max-width: 90%;
+  }
+  .faqContent .faqWrapper .faqSection h3 {
+    font-size: 27px;
+    line-height: 30px;
+  }
+  .faqContent .faqWrapper .faqSection p {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: "Inter-Regular";
+  }
+  .faqContent .faqWrapper .faqSection:nth-of-type(2) p::after {
+    left: 32%;
+  }
+  .faqContent .faqWrapper .faqSection:nth-of-type(7) p::after {
+    bottom: 168px;
+    left: 14%;
+  }
+  .faqContent .faqWrapper .faqSection:nth-last-child(1) p::after {
+    bottom: 25px;
+    left: 8%;
+  }
+  .footer ul li a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .footer {
+    height: 55px;
+    border-radius: 24px 24px 0 0;
+  }
+  .bunnerFaq {
+    border-radius: 0 0 20px 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
