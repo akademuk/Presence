@@ -283,3 +283,119 @@
         }
     }
 }
+@media(max-width: 768px) {
+    .bunnerCommunity {
+        background: url(../img/comunityMobile.png),#181717;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        background-position: bottom !important;
+        border-radius: 0 0 20px 20px;
+    }
+    .bunnerCommunity .wrapperContainer h1 {
+        width: 80%;
+        font-size: 55px;
+    }
+    .bunnerCommunity .wrapperContainer p {
+        width: 55%;
+        font-family: "Inter-Regular";
+    }
+    .bunnerCommunity .wrapperContainer button {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .communityCreators .wrapperContainer h2 {
+        font-size: 45px;
+        line-height: 60px;
+        width: 72%;
+        margin-bottom: 50px;
+    }
+    .communityCreatorsSection {
+        padding: 30px 7px 20px 16px;
+        h3 {
+            font-size: 27px;
+            line-height: 30px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 25px;
+            font-family: "Inter-Regular";
+        }
+    }
+    .communityCreators  {
+        padding-bottom: 210px;
+    }
+    .communityCreators::after {
+        background: url(../img/mobileFrame.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        bottom: -45px;
+    }
+    .tryCommunityRight {
+        display: none;
+    }
+    .communityCreators {
+        position: relative;
+        > img {
+            display: none;
+        }
+        &:before {
+            content: "";
+            background: url(../../img/mobileFrame1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    }
+    .tryCommunity h2 {
+        font-size: 45px;
+        line-height: 60px;
+        width: 60%;
+    }
+    .tryCommunity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tryCommunity p {
+        font-size: 20px;
+        line-height: 25px;
+        width: 58%;
+    }
+    .tryCommunityContent {
+        padding-left: 0;
+        margin-left: -175px;
+    }
+    .tryCommunityLef ul li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .tryCommunity {
+        background: url(../img/comynityMobile2.png), #181717;
+        background-size: contain !important;
+        background-position: right bottom !important;
+        background-repeat: no-repeat !important;
+    }
+    .getCommunity .wrapperContainer h2 {
+        font-size: 45px;
+        line-height: 60px;
+        width: 95%;
+    }
+    .getCommunity {
+        height: 700px;
+    }
+    .getCommunity .wrapperContainer button {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .getCommunity .wrapperContainer img {
+        width: 90%;
+        bottom: -212px;
+    }
+}
