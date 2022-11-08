@@ -164,3 +164,20 @@
         }
     }
 }
+@media(max-width: 768px) {
+    .bunnerFaq {
+        background-size: cover;
+        background-position: 93% bottom;
+    }
+    .bunnerFaq .wrapperContainer h1 {
+        width: 80%;
+        font-size: 55px;
+    }
+    .bunnerFaq .wrapperContainer p {
+        width: 55%;
+        font-family: "Inter-Regular";
+    }
+    .bunnerFaq:after {
+        top: 50%;
+    }
+}

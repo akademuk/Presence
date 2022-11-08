@@ -461,8 +461,8 @@ h1 {
         li {
             margin-right: 20px;
             a {
-                font-size: 22px;
-                line-height: 25px;
+                font-size: 18px;
+                line-height: 20px;
             }
         }
     }  
@@ -552,8 +552,43 @@ h1 {
 @media (max-width: 576px) {
 .headerBuilder {
     button {
-        font-size: 28px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 20px;
     }
+}
+
+.bunnerPosition {
+    flex-direction: row !important;
+    .bunnerPositionContainer {
+        width: 45% !important;
+        &:nth-of-type(2) {
+            display: none !important;
+        }
+    }
+}
+.bunnerBuilder .wrapperContainer h1 {
+    color: #FFFFFF;
+    width: 60%;
+}
+.headerBuilder ul li {
+    margin-right: 30px;
+}
+.headerBuilder ul li a {
+    font-size: 20px;
+    line-height: 20px;
+}
+.bunnerBuilder .wrapperContainer .bunnerPosition .bunnerPositionContainer h3 {
+    font-size: 25px !important;
+    line-height: 30px !important;
+}
+.bunnerBuilder .wrapperContainer .bunnerPosition .bunnerPositionContainer p {
+    font-size: 20px !important;
+    line-height: 20px !important;
+}
+.bunnerBuilder {
+    background: url(../img/HomePageMobile.png), #181717;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
 }
 }
