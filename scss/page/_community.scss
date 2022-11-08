@@ -22,7 +22,6 @@
             font-weight: 500;
             font-size: 20px;
             line-height: 24px;
-            text-transform: uppercase;
             color: #FFFFFF;
             margin-bottom: 55px;
         }
@@ -237,6 +236,45 @@
                 top: -6px;
                 left: -75px;
             }
+        }
+    }
+}
+.getCommunity {
+    background: url(../../img/Community6.png),#F5F2E1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 90px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    .wrapperContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-family: "Inter-ExtraBold";
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #181717;
+            margin-bottom: 50px;
+        }
+        button {
+            font-family: "Inter-ExtraBold";
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background: #6147FF;
+            border-radius: 12px;
+            padding: 20px 18px 13px 20px;
+            border: none;
+        }
+        img {
+            position: absolute;
+            bottom: -250px;
+            z-index: 0;
         }
     }
 }
