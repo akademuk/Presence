@@ -1,6 +1,6 @@
 .bunnerCommunity {
     padding: 295px 0 138px 0;
-    background: url(../../img/Community1.png),#181717;
+    background: url(../img/Community1.png),#181717;
     background-size: contain;
     background-repeat: no-repeat;
     .wrapperContainer {
@@ -34,9 +34,14 @@
             border-radius: 12px;
             padding: 20px 18px 13px 20px;
             border: none;
+            transition: all 0.3s;
             -webkit-box-shadow: 10px 10px 93px 0px rgba(97,71,255,1);
             -moz-box-shadow: 10px 10px 93px 0px rgba(97,71,255,1);
             box-shadow: 10px 10px 93px 0px rgba(97,71,255,1);
+            &:hover {
+                transition: all 0.3s;
+                box-shadow: none;
+            }
         }
     }
     &::after {
@@ -227,7 +232,7 @@
             text-align: left;
             &::after {
                 content: "";
-                background: url(../../img/Frame7.svg);
+                background: url(../img/Frame7.svg);
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: 61px;
@@ -240,7 +245,7 @@
     }
 }
 .getCommunity {
-    background: url(../../img/Community6.png),#F5F2E1;
+    background: url(../img/Community6.png),#F5F2E1;
     background-size: contain;
     background-repeat: no-repeat;
     height: 600px;

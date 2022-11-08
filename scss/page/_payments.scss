@@ -136,6 +136,13 @@
             padding: 7px 14px;
             border: 1px solid #000000;
             border-radius: 36px;
+            transform: all 0.3s;
+            &:hover {
+                transform: all 0.3s;
+                background: #181717;
+                color: #fff;
+                cursor: pointer;
+            }
         }
         &:nth-last-of-type(1) {
             margin-right: 0;
@@ -169,10 +176,6 @@
             border: 3px solid #1C50FE;
             height: 234px;
             padding-top: 50px;
-            button {
-                background: #181717;
-                color: #fff;
-            }
         }
     }
 }
