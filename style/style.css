@@ -1126,6 +1126,10 @@ header button:hover {
   color: #181717;
 }
 
+.businessBox {
+  padding-bottom: 223px;
+}
+
 .customization {
   margin-top: 165px;
   margin-bottom: 75px;
@@ -1443,6 +1447,39 @@ header button:hover {
   z-index: -1;
 }
 
+.customization {
+  padding-bottom: 215px;
+  margin-bottom: 0;
+}
+
+.homeCustomization {
+  position: relative;
+}
+
+.nextLevelBtnFlex {
+  bottom: 90px;
+}
+
+.started.startedOff .nextLevelBtnFlex {
+  left: 220px;
+  bottom: 60px;
+  z-index: 2;
+}
+
+.customization.businessBox .nextLevelBtnFlex {
+  bottom: -110px;
+  z-index: 2;
+}
+
+.customization {
+  padding-right: 0;
+}
+
+.customization.businessBox .wrapperContainer .bunnerRightContainer {
+  left: 0;
+  margin-right: 125px;
+}
+
 @media (max-width: 768px) {
   .bunnerBuilder {
     padding: 150px 0 150px 0;
@@ -1588,8 +1625,6 @@ header button:hover {
   .supportContainer .supportContainerLeft p {
     width: 80%;
   }
-}
-@media (max-width: 576px) {
   .headerBuilder button {
     font-size: 20px;
     line-height: 20px;
@@ -1605,7 +1640,19 @@ header button:hover {
   }
   .bunnerBuilder .wrapperContainer h1 {
     color: #FFFFFF;
-    width: 60%;
+    width: 80% !important;
+    font-size: 55px !important;
+    line-height: 60px !important;
+  }
+  .bunnerBuilder .wrapperContainer > p {
+    font-size: 23px;
+    line-height: 32px;
+    width: 80%;
+    text-align: center;
+  }
+  .bunnerBuilder .wrapperContainer .bunnerPosition {
+    bottom: -150px;
+    justify-content: space-around;
   }
   .headerBuilder ul li {
     margin-right: 30px;
@@ -1623,10 +1670,146 @@ header button:hover {
     line-height: 20px !important;
   }
   .bunnerBuilder {
-    background: url(../img/HomePageMobile.png), #181717;
+    background: url(../img/Frame11.png), #181717;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     background-position: center;
+    padding-top: 350px;
+    padding-bottom: 200px;
+    border-radius: 0 0 20px 20px;
+  }
+  .bunnerBuilder::after {
+    background: url(../img/Frame12.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 50%;
+  }
+  .businessBox {
+    position: relative;
+    padding-right: 0;
+  }
+  .businessBox .wrapperContainer .bunnerRightContainer {
+    margin-top: 100px;
+  }
+  .businessBox .wrapperContainer .customizationRight {
+    margin-top: 100px;
+  }
+  .businessBox .wrapperContainer .bunnerRightContainer .containerDesctop {
+    width: 100%;
+  }
+  .businessBox .wrapperContainer .bunnerRightContainer .containerMobile {
+    bottom: -19vh;
+    right: -2%;
+  }
+  .businessBox {
+    padding-bottom: 145px;
+    margin-bottom: 0;
+  }
+  .homeCustomization {
+    position: relative;
+  }
+  .homeCustomization .paymentFlex {
+    top: -50px;
+  }
+  .featureHomePageContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 900px;
+    margin-top: 100px;
+  }
+  .featureHomePageSection:nth-of-type(1) {
+    grid-area: 1/1/3/2;
+  }
+  .featureHomePageSection:nth-of-type(2) {
+    grid-area: 1/2/3/3;
+  }
+  .featureHomePageSection:nth-of-type(3) {
+    grid-area: 3/1/4/3;
+  }
+  .featureHomePageSection:nth-of-type(1) .top.top1 {
+    top: 45px !important;
+  }
+  .featureHomePageContainer .featureHomePageSection .top {
+    min-height: 50%;
+  }
+  .featureHomePageContainer .featureHomePageSection {
+    width: 90% !important;
+  }
+  .featureHomePageContainer .featureHomePageSection:nth-of-type(2) {
+    margin-left: auto;
+  }
+  .featureHomePageSection:nth-of-type(3) {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 100% !important;
+  }
+  .featureHomePageSection:nth-of-type(3) .top {
+    width: 60%;
+    top: 0 !important;
+    left: 0 !important;
+    min-height: 100%;
+  }
+  .featureHomePageSection:nth-of-type(3) .bottom img {
+    min-height: 100%;
+  }
+  .customizationLeft {
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 100%;
+    min-height: 100%;
+    margin-right: 0 !important;
+    margin-top: 50px;
+  }
+  .customizationRight h3 {
+    font-size: 27px !important;
+    line-height: 30px !important;
+  }
+  .customizationRight p {
+    font-size: 20px !important;
+    line-height: 25px !important;
+    font-family: "Inter-Regular" !important;
+  }
+  .homeCustomization .customizationRight .customizationRightSection {
+    text-align: left;
+  }
+  .startedOff .nextLevelBtnFlex {
+    left: 145px;
+  }
+  .homeCustomization {
+    padding-bottom: 200px;
+    margin-bottom: 0;
+  }
+  .customizationLeft img {
+    width: 100%;
+    height: 100%;
+  }
+  .startedOff .startedLeft {
+    padding-top: 150px;
+    padding-bottom: 95px;
+  }
+  .startedOff .startedLeft .designBestRight h2 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .designBestList li {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: "Inter-Regular";
+  }
+  .designBestList li::before {
+    min-width: 40px !important;
+    min-height: 40px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .customization.businessBox .wrapperContainer .bunnerRightContainer {
+    margin-right: 0 !important;
   }
 }
 .alsoLike {
@@ -2849,7 +3032,7 @@ header button:hover {
     font-size: 55px !important;
   }
   .designBest {
-    background: url(../../img/Frame10.png);
+    background: url(../img/Frame10.png);
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 200px;
