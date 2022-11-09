@@ -1,13 +1,24 @@
 .paymentBunner {
     padding: 293px 0 255px 0;
-    background: url(../img/paymentsBunner.png) !important;
+    background: url(../img/paymentsBunner.png), #181717 !important;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-left: -2px !important;
+    border-radius:0 0 20px 20px;
     &::after {
-        content: none;
+        content: none !important;
     }
+}
+.paymentFlexCon {
+    margin-bottom: 0 !important;
+    padding-bottom: 300px !important;
+}
+.nextLevelBtnFlex {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -190px;
 }
 .yourGame {
     margin: 45px 0 150px 0;
@@ -66,6 +77,35 @@
     align-items: flex-end;
     justify-content: center;
     position: relative;
+}
+.monetizeEase {
+    position: relative;
+    padding-bottom: 100px !important;
+    .nextLevelBtnFlex {
+        bottom: -15px;
+    }
+}
+.paymentFlexCon {
+    .yourGameContainer {
+        .yourGameContainerLeft {
+            h3 {
+                font-family: "Inter-ExtraBold";
+                font-weight: 800;
+                font-size: 20px;
+                line-height: 24px;
+                color: #1C50FE;
+                margin-bottom: 5px; 
+            }
+            p {
+                font-family: "Inter-Regular" !important;
+                font-weight: 400 !important;
+                font-size: 15px !important;
+                line-height: 20px !important;
+                color: #181717;
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 .yourGameHover {
     display: flex;
@@ -142,6 +182,7 @@
                 background: #181717;
                 color: #fff;
                 cursor: pointer;
+                box-shadow: none !important;
             }
         }
         &:nth-last-of-type(1) {
@@ -371,7 +412,7 @@
     }
 }
 .paidLikeContainer {
-    margin: 48px 0 61px 0;
+    margin: 48px 0 0 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -384,4 +425,190 @@
             max-width: 100%;
         }
     }
+}
+@media(max-width: 768px) {
+    .paymentBunner {
+        padding: 420px 0 200px 0 !important;
+        border-radius: 0 0 20px 20px;
+    }
+    .paymentBunner .wrapperContainer h1 {
+        width: 80% !important;
+        font-size: 55px !important;
+        line-height: 60px !important;
+    }
+    .paymentBunner .wrapperContainer > p {
+        width: 55%;
+        font-family: "Inter-Regular";
+    }
+    .bunnerBuilder.paymentBunner {
+        background: url(../img/paymentMobile1.png), #181717 !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: top !important;
+    }
+    .paymentFlex {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+    }
+    .paymentFlex {
+        text-align: center;
+        h2 {
+            font-size: 45px !important;
+            line-height: 60px !important;
+            width: 100% !important;
+        }
+        p {
+            text-align: center;
+            width: 80%;
+            font-family: "Inter-Regular";
+            margin-right: 0;
+        }
+    }
+    .paymentFlexCon {
+        position: relative;
+        padding-top: 150px;
+        .yourGameContainer {
+            .yourGameContainerLeft {
+                min-width: 90%;
+                margin: 150px auto 0 auto;
+                h3 {
+                    font-size: 27px;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 25px;
+                    font-family: "Inter-Regular" !important;
+                }
+            }
+        }
+    }
+    .nextLevelBtnFlex {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px !important;
+    }
+    .paymentFlexCon {
+        padding-bottom: 150px !important; 
+    }
+    .needSellContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .needSellSection:nth-of-type(1) { grid-area: 1 / 1 / 2 / 2; }
+        .needSellSection:nth-of-type(2) { grid-area: 1 / 2 / 2 / 3; }
+        .needSellSection:nth-of-type(3) { grid-area: 2 / 1 / 3 / 3; }
+
+        .needSell .wrapperContainer h2{
+            font-size: 45px;
+            line-height: 60px;
+        }
+        .needSell {
+            height: 100%;
+        }
+        .needSellSection h3 {
+            font-size: 27px;
+            line-height: 30px;
+        }
+        .needSellSection p {
+            font-size: 20px;
+            line-height: 25px;
+            font-family: "Inter-Regular";
+        }
+        .needSellSection::after {
+            right: 60px !important;
+            top: 30px !important;
+            left: auto !important;
+        }
+        .needSellSection {
+            border-radius: 10px !important;
+        }
+        .needSellSection:nth-of-type(3) {
+            background: url(../img/Frame9.png);
+            width: 100% !important;
+            background-repeat: no-repeat !important;
+            background-size: contain !important;
+            justify-content: flex-start;
+            h3 {
+                margin-top: 35px !important;
+            }
+            &:after {
+                transform: rotate(-8deg);
+                right: 90px !important;
+                top: 50px !important;
+            }
+            p  {
+                width: 75%;
+            }
+        }
+        .needSellPosition {
+            right: 55px;
+        }
+        .needSellSection:nth-of-type(1)::after {
+            transform: rotate(8deg);
+        }
+        .needSell::after {
+            top: -110px;
+            z-index: 0;
+        }
+        .monetizeEase {
+            flex-direction: column;
+            position: relative;
+            padding-top: 100px !important;
+            padding-bottom: 170px !important;
+            .paymentRight {
+                margin-right: 0 !important;
+            }
+            .paymentLeft {
+                width: 80%;
+            }
+            .paymentLeftContainer {
+                width: 100%;
+                h3 {
+                    font-size: 27px;
+                    line-height: 30px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 25px;
+                    font-family: "Inter-Regular";
+                }
+            }
+        }
+        .paidLike  {
+            .wrapperContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    font-size: 45px !important;
+                    line-height: 60px !important;
+                    width: 100% !important;
+                }
+                p {
+                    text-align: center;
+                    width: 60%;
+                    font-family: "Inter-Regular";
+                    margin: 0;
+                }
+            }
+        }
+        .paidLikeContainer div img {
+            max-width: 80%;
+        }
+        .paidLikeContainer {
+            margin-bottom: 0;
+        }
 }
