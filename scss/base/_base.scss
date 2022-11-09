@@ -18,6 +18,13 @@
     max-width: 1050px;
     margin: 0 auto;
 }
+header {
+    button {
+        &:hover {
+            box-shadow: none !important;
+        }
+    }
+}
 .style {
     display: flex;
     li {

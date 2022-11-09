@@ -42,6 +42,10 @@
   margin: 0 auto;
 }
 
+header button:hover {
+  box-shadow: none !important;
+}
+
 .style {
   display: flex;
 }
@@ -2375,11 +2379,11 @@
   }
 }
 .coursesBunner {
-  padding: 291px 0 220px 0;
-  background: url(../img/coursesBunner.png), #181717;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  padding: 291px 0 220px 0 !important;
+  background: url(../img/box-shadow.png), url(../img/coursesBunner.png), #181717 !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: 0 bottom, center !important;
   border-radius: 0 0 20px 20px;
   position: relative;
 }
@@ -2419,8 +2423,45 @@
   width: 40%;
 }
 
+.designBest .nextLevelBtn.nextLevelBtnFlex {
+  bottom: 85px;
+}
+
+.flexCo {
+  position: relative;
+  padding-bottom: 200px !important;
+}
+.flexCo .nextLevelBtnFlex {
+  bottom: 55px;
+}
+
+.flexCo .nextLevelBtnFlex {
+  background: #181717;
+  transition: all 0.3ms;
+}
+.flexCo .nextLevelBtnFlex:hover {
+  background: white;
+  transition: all 0.3ms;
+  color: black;
+  box-shadow: none;
+}
+
+.monetizeWisely {
+  margin-top: 120px;
+  padding-bottom: 35px !important;
+  position: relative;
+}
+.monetizeWisely .nextLevelBtnFlex {
+  bottom: 35px;
+  left: 195px;
+}
+.monetizeWisely .paymentRight {
+  width: 50%;
+  margin-left: 0;
+}
+
 .designBest {
-  padding: 69px 0;
+  padding: 69px 0 200px 0;
   position: relative;
 }
 .designBest .wrapperContainer {
@@ -2703,9 +2744,8 @@
     line-height: 32px;
   }
   .coursesBunner .wrapperContainer h1 {
-    font-size: 40px;
-    line-height: 45px;
-    width: 100%;
+    width: 80% !important;
+    font-size: 55px !important;
   }
   .designBestList li {
     font-size: 23px !important;
@@ -2795,6 +2835,94 @@
   }
   .designBest::after {
     content: none;
+  }
+  .coursesBunner {
+    background: url(../img/box-shadow.png), url(../img/coursesBunner.png), #181717 !important;
+    background-position: 0 bottom !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    padding: 420px 0 200px 0 !important;
+    border-radius: 0 0 20px 20px;
+  }
+  .coursesBunner .wrapperContainer h1 {
+    width: 75% !important;
+    font-size: 55px !important;
+  }
+  .designBest {
+    background: url(../../img/Frame10.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 200px;
+    padding-bottom: 150px;
+  }
+  .designBest .designBestRight .paymentFlex {
+    top: 50px;
+  }
+  .designBest .designBestList {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .designBest .designBestList li {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .designBest .designBestList li::before {
+    min-width: 40px;
+    min-height: 40px;
+  }
+  .onlineCourseContainer h2 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .onlineCourseContainer {
+    width: 90%;
+  }
+  .monetizeWisely {
+    flex-direction: column-reverse;
+  }
+  .monetizeWisely {
+    padding-top: 100px;
+    position: relative;
+  }
+  .monetizeWisely .paymentLeft h3 {
+    font-size: 27px !important;
+    line-height: 30px !important;
+  }
+  .monetizeWisely .paymentLeft p {
+    font-size: 20px !important;
+    line-height: 25px !important;
+    font-family: "Inter-Regular" !important;
+  }
+  .monetizeWisely .paymentRight {
+    margin-left: 0;
+  }
+  .flexCo {
+    position: relative;
+  }
+  .monetizeWisely .paymentRight img {
+    margin-bottom: 50px;
+  }
+  .monetizeWisely {
+    padding-bottom: 155px !important;
+    margin-bottom: 0;
+  }
+  .monetizeWisely .paymentLeftContainer {
+    text-align: left;
+  }
+  .monetizeWisely .nextLevelBtn.nextLevelBtnFlex {
+    left: 50% !important;
+  }
+  .itHappen .wrapperContainer h2 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .itHappen .wrapperContainer p {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: "Inter-Regular";
+  }
+  .itHappenContainer .itHappenSection {
+    width: 25% !important;
   }
 }
 .AppWeb {
