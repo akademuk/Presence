@@ -3842,6 +3842,19 @@ header button {
   width: 35%;
 }
 
+.buttonS button {
+  transition: all 0.3s;
+  box-shadow: none;
+}
+.buttonS button:hover {
+  transition: all 0.3s;
+  box-shadow: 10px 10px 53px 0px #1C50FE;
+}
+
+.headerBuilder button:hover {
+  box-shadow: none;
+}
+
 .nextLevelBtn {
   font-family: "Inter-ExtraBold";
   font-size: 25px;
